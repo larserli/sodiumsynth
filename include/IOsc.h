@@ -23,7 +23,7 @@ public:
 	virtual ~IOsc(){
 
 	};
-	void SetLfo(IOsc *lfo, float depth){
+	void setLfo(IOsc *lfo, float depth){
 		_lfo = lfo;
 		_mod_depth = depth;
 	};

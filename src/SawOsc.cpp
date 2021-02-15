@@ -8,14 +8,17 @@
 #include "SawOsc.h"
 
 SawOsc::SawOsc(IClockSource *clock, float frequency) : IOsc(clock) {
-	// TODO Auto-generated constructor stub
 	_freq = frequency;
 	_step = _freq * (2.0f / _clock_freq);
+}
 
+SawOsc::SawOsc(IClockSource *clock) : IOsc(clock){
+	_freq = 0.0f;
+	_step = 0.0f;
 }
 
 SawOsc::~SawOsc() {
-	// TODO Auto-generated destructor stub
+
 }
 
 void SawOsc::setFreq(float freq){

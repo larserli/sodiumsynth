@@ -11,12 +11,14 @@ SlowClock::SlowClock(IClockSource *clock){
 	_master_clock = clock;
 	_rate = 1;
 	_ticks = 0;
+	_master_clock->AddObserver(this);
 }
 
 SlowClock::SlowClock(IClockSource *clock, float rate){
 	_master_clock = clock;
 	_rate = static_cast<int>(static_cast<float>(_master_clock->GetFrequency()) / rate);
 	_ticks = 0;
+	_master_clock->AddObserver(this);
 }
 
 SlowClock::~SlowClock(){

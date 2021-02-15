@@ -12,6 +12,7 @@
 class SawOsc : public IOsc{
 public:
 	SawOsc(IClockSource *clock, float frequency);
+	SawOsc(IClockSource *clock);
 	virtual ~SawOsc();
 	virtual void tick() override;
 	void setFreq(float freq) override;
