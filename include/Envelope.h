@@ -19,16 +19,18 @@ public:
 private:
 	enum class state{
 		ATTACK,
+		DECAY,
 		SUSTAIN,
-		OFF,
+		RELEASE,
 	};
-	float _attack;
-	float _decay;
-	float _sustain;
-	float _release;
-	float _time;
-	float _step;
-	//enum state _state;
+	float m_attack;
+	float m_decay;
+	float m_sustain;
+	float m_release;
+	float m_time;
+	float m_step;
+	enum state m_state;
+	float m_val;
 };
 
 
