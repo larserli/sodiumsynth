@@ -9,7 +9,7 @@
 #include "IAudioModule.h"
 #include "TimeVariant.h"
 
-class Envelope : public IAudioModule, public TimeVariant{
+class Envelope : public TimeVariant{
 public:
 	Envelope(IClockSource *clock, float a, float d, float s, float r);
 	virtual ~Envelope();
@@ -31,6 +31,7 @@ private:
 	float m_step;
 	enum state m_state;
 	float m_val;
+	void tick() override;
 };
 
 
