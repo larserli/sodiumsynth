@@ -13,7 +13,7 @@ Envelope::Envelope(IClockSource *clock, float a, float d, float s, float r) : Ti
 	m_sustain = s;
 	m_release = r;
 	m_time = 0.0f;
-	m_step = 1.0f / _clock_freq;
+	m_step = 1.0f / _clock->GetFrequency();
 	m_state = state::RELEASE;
 	m_val = 0.0f;
 
@@ -32,20 +32,33 @@ void Envelope::KeyUp(){
 }
 
 float Envelope::get(){
+	return m_val;
+
+}
+
+void Envelope::tick(){
 	switch(m_state){
 	case state::ATTACK:
 	{
-		float step = m_attack / static_cast<float>(_clock->GetFrequency());
+		if(m_attack <= 0.0){		//Avoid divide by zero
+			m_state = state::DECAY;
+			break;
+		}
+		float step = 1.0f / (m_attack * static_cast<float>(_clock->GetFrequency()));
 		m_val += step;
 		if(m_val >= 1.0f){
 			m_val = 1.0f;
-			m_state = state::RELEASE;
+			m_state = state::DECAY;
 		}
 	}
 		break;
 	case state::DECAY:
 	{
-		float step = m_decay / static_cast<float>(_clock->GetFrequency());
+		if(m_decay <= 0.0){
+			m_state = state::SUSTAIN;
+			break;
+		}
+		float step = (1.0f - m_sustain) / ( m_decay * static_cast<float>(_clock->GetFrequency()));
 		m_val -= step;
 		if(m_val <= m_sustain){
 			m_val = m_sustain;
@@ -58,15 +71,20 @@ float Envelope::get(){
 		break;
 	case state::RELEASE:
 	{
-		float step = m_release / static_cast<float>(_clock->GetFrequency());
-		m_val -= step;
-		if(m_val < 0.0f){
+		if(m_release <= 0.0){
 			m_val = 0.0f;
+		}else{
+			float step = (m_sustain)/ (m_release * static_cast<float>(_clock->GetFrequency()));
+			m_val -= step;
+			if(m_val < 0.0f){
+				m_val = 0.0f;
+			}
 		}
 
 	}
 	break;
 	}
-	return m_val;
+
+
 }
 

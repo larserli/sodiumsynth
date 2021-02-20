@@ -37,7 +37,7 @@ float Amp::get(){
 	}
 	float level = _level;
 	if(_mod != nullptr){
-		level += (_mod->get() * _mod_level);
+		level = _mod->get() * _level;
 	}
 	float signal = _source->get() * level;
 	/*if(signal > 1.0){

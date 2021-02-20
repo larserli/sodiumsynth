@@ -19,10 +19,12 @@ Mixer::~Mixer() {
 void Mixer::AddChannel(IAudioModule *channel, float level){
 	_channels.push_back({channel, level});
 }
+
 void Mixer::RemoveChannel(IAudioModule *channel){
-	_channels.remove_if([&channel](struct channel &c)->bool{return c.source == channel;});
+	_channels.remove_if([&](struct channel &c)->bool{return c.source == channel;});
 
 }
+
 void Mixer::SetLevel(IAudioModule *channel, float level){
 	for(auto &c : _channels){
 		if(c.source == channel){
