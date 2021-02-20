@@ -24,15 +24,15 @@ public:
 	void tick() override;
 
 private:
-	std::shared_ptr<IOsc>_osc;
-	float _mod_depth;
-	float _delay;
-	float _base_delay;
-	float _max_delay;
-	float _mix;
-	std::vector<float> _buffer;
-	size_t _put_at;
-	IAudioModule *_source;
+	std::shared_ptr<IOsc>m_osc;
+	float m_mod_depth;
+	float m_delay;
+	float m_base_delay;
+	float m_max_delay;
+	float m_mix;
+	std::vector<float> m_buffer;
+	size_t m_put_at;
+	IAudioModule *m_source;
 
 
 };

@@ -19,8 +19,8 @@ public:
 	void tick() override;
 private:
 	float calcStep(float freq);
-	float _step;
-	int _state;
+	float m_step;
+	int m_state;
 };
 
 

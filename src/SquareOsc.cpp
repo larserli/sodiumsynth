@@ -8,44 +8,43 @@
 #include "SquareOsc.h"
 
 SquareOsc::SquareOsc(IClockSource *clock, float frequency) : IOsc(clock) {
-	_freq = frequency;
-	_prd = static_cast<float>(_clock_freq) / frequency;
-	_prd_low = _prd / 2.0f;
-	_pwMod = nullptr;
-	_pwModDepth = 0.0f;
+	m_freq = frequency;
+	m_prd = static_cast<float>(m_clock_freq) / frequency;
+	m_prd_low = m_prd / 2.0f;
+	m_pwMod = nullptr;
+	m_pwModDepth = 0.0f;
 }
 
 SquareOsc::~SquareOsc() {
-	// TODO Auto-generated destructor stub
 }
 
 void SquareOsc::SetPWMod(IOsc * mod, float depth){
-	_pwMod = mod;
-	_pwModDepth = depth;
+	m_pwMod = mod;
+	m_pwModDepth = depth;
 }
 
 void SquareOsc::setFreq(float freq){
-	_freq = freq;
-	_prd = static_cast<float>(_clock_freq) / _freq;
+	m_freq = freq;
+	m_prd = static_cast<float>(m_clock_freq) / m_freq;
 }
 
 void SquareOsc::tick(){
-	if(_pwMod != nullptr){
-		_prd_low = (_prd / 2.0f) + (_pwMod->get() * _pwModDepth * _prd);
-		if(_prd_low < 0.0f){
-			_prd_low = 0.0f;
-		}else if(_prd_low > _prd){
-			_prd_low = _prd;
+	if(m_pwMod != nullptr){
+		m_prd_low = (m_prd / 2.0f) + (m_pwMod->get() * m_pwModDepth * m_prd);
+		if(m_prd_low < 0.0f){
+			m_prd_low = 0.0f;
+		}else if(m_prd_low > m_prd){
+			m_prd_low = m_prd;
 		}
 	}
-	_val += 1.0f;
-	if(_val > _prd){
-		_val -= _prd;
+	m_val += 1.0f;
+	if(m_val > m_prd){
+		m_val -= m_prd;
 	}
-	if(_val < _prd_low){
-		_out = -1.0f;
+	if(m_val < m_prd_low){
+		m_out = -1.0f;
 	}else{
-		_out = 1.0f;
+		m_out = 1.0f;
 	}
 }
 

@@ -8,58 +8,54 @@
 #include "SimpleDelay.h"
 
 SimpleDelay::SimpleDelay(IClockSource *clock) : TimeVariant(clock) {
-	_delay_time = 0;
-	_feedback = 0.0f;
-	_mix = 0.0;
-	_source = nullptr;
-	_get_at = 1;
-	_put_at = 0;
+	m_delay_time = 0;
+	m_feedback = 0.0f;
+	m_mix = 0.0;
+	m_source = nullptr;
+	m_get_at = 1;
+	m_put_at = 0;
 }
 
 SimpleDelay::~SimpleDelay() {
-	// TODO Auto-generated destructor stub
 }
 
 void SimpleDelay::SetFeedback(float feedback){
-	_feedback = feedback;
+	m_feedback = feedback;
 }
 
 void SimpleDelay::SetMix(float mix){
-	_mix = mix;
+	m_mix = mix;
 }
 
 void SimpleDelay::SetTime(unsigned long time){
-	_delay_time = time;
-	_buffer.resize((time * _clock_freq) / 1000);
+	m_delay_time = time;
+	m_buffer.resize((time * m_clock_freq) / 1000);
 
 }
 
 void SimpleDelay::SetSource(IAudioModule *source){
-	_source = source;
+	m_source = source;
 }
 
 void SimpleDelay::tick(){
-	if(_source == nullptr){
-		_out = 0.0f;
+	if(m_source == nullptr){
+		m_out = 0.0f;
 	}
-	if(_delay_time == 0){
-		_out = _source->get();
+	if(m_delay_time == 0){
+		m_out = m_source->get();
 	}
-	_out = (_buffer[_get_at++] * _mix) + (_source->get() * (1.0f-_mix));
-	if(_get_at >= _buffer.size()){
-		_get_at = 0;
+	m_out = (m_buffer[m_get_at++] * m_mix) + (m_source->get() * (1.0f-m_mix));
+	if(m_get_at >= m_buffer.size()){
+		m_get_at = 0;
 	}
-	if(_out > 1.0f){
-		_out = 1.0f;
-	}else if(_out < -1.0f){
-		_out = -1.0f;
+	if(m_out > 1.0f){
+		m_out = 1.0f;
+	}else if(m_out < -1.0f){
+		m_out = -1.0f;
 	}
-	_buffer[_put_at++] = _source->get() + (_out * _feedback);
-	if(_put_at >= _buffer.size()){
-		_put_at = 0;
+	m_buffer[m_put_at++] = m_source->get() + (m_out * m_feedback);
+	if(m_put_at >= m_buffer.size()){
+		m_put_at = 0;
 	}
-
-
-
 
 }

@@ -16,7 +16,7 @@ public:
 	virtual void tick() override;
 	void setFreq(float freq) override;
 private:
-	float _step;
+	float m_step;
 };
 
 #endif /* SINEOSC_H_ */

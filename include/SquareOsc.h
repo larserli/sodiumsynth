@@ -16,10 +16,11 @@ public:
 	virtual void tick() override;
 	void SetPWMod(IOsc *mod, float depth);
 private:
-	float _prd_low;
-	float _prd;
-	IOsc *_pwMod;
-	float _pwModDepth;
+
+	float m_prd_low;
+	float m_prd;
+	IOsc *m_pwMod;
+	float m_pwModDepth;
 };
 
 #endif /* SQUAREOSC_H_ */

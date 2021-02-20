@@ -14,19 +14,19 @@
 class TimeVariant: public ClockObserver, public IAudioModule{
 public:
 	TimeVariant(IClockSource *clock){
-		_clock = clock;
-		_clock_freq = clock->GetFrequency();
-		_clock->AddObserver(this);
-		_out = 0.0;
+		m_clock = clock;
+		m_clock_freq = clock->GetFrequency();
+		m_clock->AddObserver(this);
+		m_out = 0.0;
 	};
 	virtual ~TimeVariant(){
-		_clock->RemoveObserver(this);
+		m_clock->RemoveObserver(this);
 	};
-	float get() override{return _out;};
+	float get() override{return m_out;};
 protected:
-	IClockSource *_clock;
-	float _clock_freq;
-	float _out;
+	IClockSource *m_clock;
+	float m_clock_freq;
+	float m_out;
 };
 
 

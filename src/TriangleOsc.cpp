@@ -8,15 +8,15 @@
 #include "TriangleOsc.h"
 
 TriangleOsc::TriangleOsc(IClockSource *clock) : IOsc(clock){
-	_freq = 0;
-	_step = calcStep(_freq);
-	_state = 0;
+	m_freq = 0;
+	m_step = calcStep(m_freq);
+	m_state = 0;
 }
 
 TriangleOsc::TriangleOsc(IClockSource *clock, float freq): IOsc(clock){
-	_freq = freq;
-	_step = calcStep(_freq);
-	_state = 0;
+	m_freq = freq;
+	m_step = calcStep(m_freq);
+	m_state = 0;
 }
 
 TriangleOsc::~TriangleOsc(){
@@ -24,28 +24,28 @@ TriangleOsc::~TriangleOsc(){
 }
 
 void TriangleOsc::setFreq(float freq){
-	_freq = freq;
-	_step = calcStep(_freq);
+	m_freq = freq;
+	m_step = calcStep(m_freq);
 }
 
 float TriangleOsc::calcStep(float freq){
-	return freq * (4.0 / _clock_freq);
+	return freq * (4.0 / m_clock_freq);
 }
 
 void TriangleOsc::tick(){
-	if(_lfo != nullptr){
-		_step = calcStep(_freq + (_lfo->get() * _mod_depth));
+	if(m_lfo != nullptr){
+		m_step = calcStep(m_freq + (m_lfo->get() * m_mod_depth));
 	}
 	//Switch state if the output is going outside [-1,1]
-	if(_out > (1.0f - _step)){
-		_state = 1;
-	}else if(_out < (-1.0f + _step)){
-		_state = 0;
+	if(m_out > (1.0f - m_step)){
+		m_state = 1;
+	}else if(m_out < (-1.0f + m_step)){
+		m_state = 0;
 	}
-	if(_state == 0){
-		_out += _step;
+	if(m_state == 0){
+		m_out += m_step;
 	}else{
-		_out -= _step;
+		m_out -= m_step;
 	}
 }
 

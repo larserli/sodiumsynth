@@ -11,15 +11,15 @@
 
 
 Chorus::Chorus(IClockSource *clock) : TimeVariant(clock){
-	_osc = std::shared_ptr<IOsc>(new SineOsc(clock, 0.0f));
-	_source = nullptr;
-	_mod_depth = 0.0f;
-	_max_delay = 0.1f;
-	_buffer.resize(_max_delay * clock->GetFrequency());
-	_put_at = 0;
-	_delay = 0.03f;
-	_base_delay = 0.03f;
-	_mix = 0.5f;
+	m_osc = std::shared_ptr<IOsc>(new SineOsc(clock, 0.0f));
+	m_source = nullptr;
+	m_mod_depth = 0.0f;
+	m_max_delay = 0.1f;
+	m_buffer.resize(m_max_delay * clock->GetFrequency());
+	m_put_at = 0;
+	m_delay = 0.03f;
+	m_base_delay = 0.03f;
+	m_mix = 0.5f;
 }
 
 Chorus::~Chorus(){
@@ -28,35 +28,35 @@ Chorus::~Chorus(){
 
 
 void Chorus::setSource(IAudioModule *source){
-	_source = source;
+	m_source = source;
 }
 
 void Chorus::setModDepth(float depth){
-	_mod_depth = depth;
+	m_mod_depth = depth;
 }
 
 void Chorus::setModRate(float freq){
-	_osc->setFreq(freq);
+	m_osc->setFreq(freq);
 }
 
 void Chorus::setMix(float mix){
-	_mix = mix;
+	m_mix = mix;
 }
 
 void Chorus::tick(){
-	if(_source == nullptr){
-		_out = 0.0f;
+	if(m_source == nullptr){
+		m_out = 0.0f;
 		return;
 	}
-	float delay = _delay + (_osc->get() * _mod_depth);
-	int get_at = _put_at - static_cast<int>(delay * _clock->GetFrequency());
+	float delay = m_delay + (m_osc->get() * m_mod_depth);
+	int get_at = m_put_at - static_cast<int>(delay * m_clock->GetFrequency());
 	if(get_at < 0){
-		get_at += _buffer.size();
+		get_at += m_buffer.size();
 	}
-	_out = (_buffer[get_at] * _mix) + (_source->get() * (1.0f - _mix));
-	_buffer[_put_at++] = _source->get();
-	if(_put_at >= _buffer.size()){
-		_put_at = 0;
+	m_out = (m_buffer[get_at] * m_mix) + (m_source->get() * (1.0f - m_mix));
+	m_buffer[m_put_at++] = m_source->get();
+	if(m_put_at >= m_buffer.size()){
+		m_put_at = 0;
 	}
 
 

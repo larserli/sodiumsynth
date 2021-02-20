@@ -8,13 +8,13 @@
 #include "SawOsc.h"
 
 SawOsc::SawOsc(IClockSource *clock, float frequency) : IOsc(clock) {
-	_freq = frequency;
-	_step = _freq * (2.0f / _clock_freq);
+	m_freq = frequency;
+	m_step = m_freq * (2.0f / m_clock_freq);
 }
 
 SawOsc::SawOsc(IClockSource *clock) : IOsc(clock){
-	_freq = 0.0f;
-	_step = 0.0f;
+	m_freq = 0.0f;
+	m_step = 0.0f;
 }
 
 SawOsc::~SawOsc() {
@@ -22,18 +22,18 @@ SawOsc::~SawOsc() {
 }
 
 void SawOsc::setFreq(float freq){
-	_freq = freq;
-	_step = _freq * (2.0f / _clock_freq);
+	m_freq = freq;
+	m_step = m_freq * (2.0f / m_clock_freq);
 }
 
 void SawOsc::tick(){
-	if(_lfo != nullptr){
-		_step = (_freq + (_lfo->get() * _mod_depth)) * (2.0f / _clock_freq);
+	if(m_lfo != nullptr){
+		m_step = (m_freq + (m_lfo->get() * m_mod_depth)) * (2.0f / m_clock_freq);
 	}
-	_val += _step;
-	if(_val > 1.0f){
-		_val -= 2.0f;
+	m_val += m_step;
+	if(m_val > 1.0f){
+		m_val -= 2.0f;
 	}
-	_out  = _val;
+	m_out  = m_val;
 }
 

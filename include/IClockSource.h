@@ -34,10 +34,10 @@ protected:
 	 */
 	void updateObservers();
 	//Clock frequency
-	int _freq;
+	int m_freq;
 private:
 	//List of observers
-	std::list<ClockObserver*> _observers;
+	std::list<ClockObserver*> m_observers;
 
 };
 

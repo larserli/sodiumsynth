@@ -26,15 +26,15 @@ public:
 	 * @param max Random number upper bound
 	 */
 	RandomGenerator(IClockSource *clock, T min, T max) : TimeVariant(clock){
-		_min = min;
-		_max = max;
+		m_min = min;
+		m_max = max;
 	}
 	virtual ~RandomGenerator(){};
 	/** Register a new action (lambda)
 	 *
 	 */
 	void registerAction(std::function<void(T)> action){
-		_actions.push_back(action);
+		m_actions.push_back(action);
 	}
 	/** Tick from clock
 	 * Generate a random number and perform all actions with the new number
@@ -42,18 +42,18 @@ public:
 	void tick() override{
 		unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
 		std::default_random_engine generator(seed);
-		std::uniform_real_distribution<double> distribution(static_cast<double>(_min),static_cast<double>(_max));
-		_value = static_cast<T>(distribution(generator));
-		for(auto &action : _actions){
-			action(_value);
+		std::uniform_real_distribution<double> distribution(static_cast<double>(m_min),static_cast<double>(m_max));
+		m_value = static_cast<T>(distribution(generator));
+		for(auto &action : m_actions){
+			action(m_value);
 		}
 
 	}
 private:
-	std::vector<std::function<void(T)>> _actions;
-	T _min;
-	T _max;
-	T _value;
+	std::vector<std::function<void(T)>> m_actions;
+	T m_min;
+	T m_max;
+	T m_value;
 };
 
 

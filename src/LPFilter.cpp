@@ -8,8 +8,8 @@
 #include "LPFilter.h"
 
 LPFilter::LPFilter(IClockSource *clock) : TimeVariant(clock){
-	_n = 0;
-	_order = 0;
+	m_n = 0;
+	m_order = 0;
 }
 
 LPFilter::~LPFilter(){
@@ -17,27 +17,27 @@ LPFilter::~LPFilter(){
 }
 
 void LPFilter::tick(){
-	_x[_n] = _source->get();
+	m_x[m_n] = m_source->get();
 
-	_y[_n] = 0.0f;
-	for(int i=0;i<_b.size();i++){
-		int z = _n - i;
+	m_y[m_n] = 0.0f;
+	for(size_t i=0;i<m_b.size();i++){
+		int z = m_n - i;
 		if(z < 0){
-			z+=_x.size();
+			z+=m_x.size();
 		}
-		_y[_n] += _b[i] * _x[z];
+		m_y[m_n] += m_b[i] * m_x[z];
 	}
-	for(int i=1;i<_b.size();i++){
-		int p = _n - i;
+	for(size_t i=1;i<m_b.size();i++){
+		int p = m_n - i;
 		if(p < 0){
-			p+=_y.size();
+			p+=m_y.size();
 		}
-		_y[_n] += _a[i] * _y[p];
+		m_y[m_n] += m_a[i] * m_y[p];
 	}
-	_out = _y[_n];
-	_n++;
-	if(_n > _order){
-		_n = 0;
+	m_out = m_y[m_n];
+	m_n++;
+	if(m_n > m_order){
+		m_n = 0;
 	}
 }
 

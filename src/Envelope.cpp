@@ -13,14 +13,13 @@ Envelope::Envelope(IClockSource *clock, float a, float d, float s, float r) : Ti
 	m_sustain = s;
 	m_release = r;
 	m_time = 0.0f;
-	m_step = 1.0f / _clock->GetFrequency();
+	m_step = 1.0f / m_clock->GetFrequency();
 	m_state = state::RELEASE;
 	m_val = 0.0f;
 
 }
 
 Envelope::~Envelope() {
-	// TODO Auto-generated destructor stub
 }
 
 void Envelope::KeyDown(){
@@ -44,7 +43,7 @@ void Envelope::tick(){
 			m_state = state::DECAY;
 			break;
 		}
-		float step = 1.0f / (m_attack * static_cast<float>(_clock->GetFrequency()));
+		float step = 1.0f / (m_attack * static_cast<float>(m_clock->GetFrequency()));
 		m_val += step;
 		if(m_val >= 1.0f){
 			m_val = 1.0f;
@@ -58,7 +57,7 @@ void Envelope::tick(){
 			m_state = state::SUSTAIN;
 			break;
 		}
-		float step = (1.0f - m_sustain) / ( m_decay * static_cast<float>(_clock->GetFrequency()));
+		float step = (1.0f - m_sustain) / ( m_decay * static_cast<float>(m_clock->GetFrequency()));
 		m_val -= step;
 		if(m_val <= m_sustain){
 			m_val = m_sustain;
@@ -74,7 +73,7 @@ void Envelope::tick(){
 		if(m_release <= 0.0){
 			m_val = 0.0f;
 		}else{
-			float step = (m_sustain)/ (m_release * static_cast<float>(_clock->GetFrequency()));
+			float step = (m_sustain)/ (m_release * static_cast<float>(m_clock->GetFrequency()));
 			m_val -= step;
 			if(m_val < 0.0f){
 				m_val = 0.0f;

@@ -8,7 +8,7 @@
 #include "IClockSource.h"
 
 IClockSource::IClockSource(){
-	_freq = 0;
+	m_freq = 0;
 }
 
 IClockSource::~IClockSource(){
@@ -16,17 +16,17 @@ IClockSource::~IClockSource(){
 }
 
 int IClockSource::GetFrequency(){
-	return _freq;
+	return m_freq;
 }
 void IClockSource::AddObserver(ClockObserver *observer){
-	_observers.push_back(observer);
+	m_observers.push_back(observer);
 }
 void IClockSource::RemoveObserver(ClockObserver *observer){
-	_observers.remove(observer);
+	m_observers.remove(observer);
 }
 
 void IClockSource::updateObservers(){
-	for(auto &o : _observers){
+	for(auto &o : m_observers){
 		o->tick();
 	}
 }

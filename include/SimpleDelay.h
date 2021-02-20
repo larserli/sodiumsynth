@@ -28,13 +28,13 @@ public:
 	void tick() override;
 
 private:
-	unsigned long _delay_time;
-	float _feedback;
-	float _mix;
-	std::vector<float> _buffer;
-	IAudioModule *_source;
-	size_t _get_at;
-	size_t _put_at;
+	unsigned long m_delay_time;
+	float m_feedback;
+	float m_mix;
+	std::vector<float> m_buffer;
+	IAudioModule *m_source;
+	size_t m_get_at;
+	size_t m_put_at;
 };
 
 #endif /* SIMPLEDELAY_H_ */

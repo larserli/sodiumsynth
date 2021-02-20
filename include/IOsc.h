@@ -13,10 +13,10 @@
 class IOsc : public TimeVariant{
 public:
 	IOsc(IClockSource *clock) : TimeVariant(clock){
-		_val = 0.0f;
-		_lfo = nullptr;
-		_mod_depth = 0.0f;
-		_freq = 0.0f;
+		m_val = 0.0f;
+		m_lfo = nullptr;
+		m_mod_depth = 0.0f;
+		m_freq = 0.0f;
 
 	};
 	virtual void setFreq(float freq) = 0;
@@ -24,15 +24,15 @@ public:
 
 	};
 	void setLfo(IOsc *lfo, float depth){
-		_lfo = lfo;
-		_mod_depth = depth;
+		m_lfo = lfo;
+		m_mod_depth = depth;
 	};
 
 protected:
-	float _val;
-	float _freq;
-	IOsc *_lfo;
-	float _mod_depth;
+	float m_val;
+	float m_freq;
+	IOsc *m_lfo;
+	float m_mod_depth;
 
 
 };

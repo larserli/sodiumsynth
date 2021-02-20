@@ -42,10 +42,10 @@ public:
 	float get() override;
 
 private:
-	IAudioModule *_source;
-	IAudioModule *_mod;
-	float _level;
-	float _mod_level;
+	IAudioModule *m_source;
+	IAudioModule *m_mod;
+	float m_level;
+	float m_mod_level;
 
 };
 

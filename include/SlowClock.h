@@ -29,9 +29,9 @@ public:
 	void tick() override;
 
 private:
-	int _ticks;
-	int _rate;
-	IClockSource *_master_clock;
+	int m_ticks;
+	int m_rate;
+	IClockSource *m_master_clock;
 };
 
 

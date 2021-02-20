@@ -13,18 +13,18 @@ public:
 
 
 private:
-	IAudioModule *_source;
+	IAudioModule *m_source;
 
-	float _cutoff;
-	float _resonance;
+	float m_cutoff;
+	float m_resonance;
 
-	std::vector<float> _x;
-	std::vector<float> _y;
-	std::vector<float> _a;
-	std::vector<float> _b;
+	std::vector<float> m_x;
+	std::vector<float> m_y;
+	std::vector<float> m_a;
+	std::vector<float> m_b;
 
-	int _order;
+	int m_order;
 
-	int _n;
+	int m_n;
 
 };

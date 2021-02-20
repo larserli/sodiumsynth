@@ -22,7 +22,7 @@ private:
 		IAudioModule *source;
 		float level;
 	};
-	std::list<struct channel> _channels;
+	std::list<struct channel> m_channels;
 };
 
 #endif /* MIXER_H_ */
