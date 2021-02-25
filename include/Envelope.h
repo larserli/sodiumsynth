@@ -56,7 +56,8 @@ public:
 	 * Return release time (ms)
 	 */
 	float getRelease();
-	virtual float get() override;
+
+	float get() override;
 private:
 	enum class state{
 		ATTACK,
