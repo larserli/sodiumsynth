@@ -12,6 +12,9 @@
 #include "TimeVariant.h"
 #include <vector>
 
+/**
+ * Single delay effect
+ */
 class SimpleDelay: public TimeVariant {
 public:
 	SimpleDelay(IClockSource *clock);
@@ -33,8 +36,10 @@ private:
 	float m_mix;
 	std::vector<float> m_buffer;
 	IAudioModule *m_source;
-	size_t m_get_at;
-	size_t m_put_at;
+	//Buffer front
+	size_t m_front;
+	//Buffer back
+	size_t m_back;
 };
 
 #endif /* SIMPLEDELAY_H_ */

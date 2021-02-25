@@ -11,6 +11,11 @@
 #include "IClockSource.h"
 #include "IAudioModule.h"
 
+/**
+ * Generic interface for time dependent audio modules
+ * Modules of this type depend on input from a clock source and will
+ * act as observers to this clock source.
+ */
 class TimeVariant: public ClockObserver, public IAudioModule{
 public:
 	TimeVariant(IClockSource *clock){
@@ -22,7 +27,7 @@ public:
 	virtual ~TimeVariant(){
 		m_clock->RemoveObserver(this);
 	};
-	float get() override{return m_out;};
+	virtual float get() override{return m_out;};
 protected:
 	IClockSource *m_clock;
 	float m_clock_freq;

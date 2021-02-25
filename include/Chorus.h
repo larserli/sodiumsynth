@@ -13,14 +13,22 @@
 #include <vector>
 #include <memory>
 
+/** Chorus effect
+ *
+ */
 class Chorus: public TimeVariant{
 public:
 	Chorus(IClockSource *clock);
 	virtual ~Chorus();
+	//Set source (input)
 	void setSource(IAudioModule *source);
+	//Set modulation depth
 	void setModDepth(float depth);
+	//Set modulation rate
 	void setModRate(float freq);
+	//Set effect mix
 	void setMix(float mix);
+
 	void tick() override;
 
 private:

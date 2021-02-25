@@ -9,12 +9,15 @@
 #define SAWOSC_H_
 #include "IOsc.h"
 
+/**
+ * Sawtooth (ramp) oscillator
+ */
 class SawOsc : public IOsc{
 public:
 	SawOsc(IClockSource *clock, float frequency);
 	SawOsc(IClockSource *clock);
 	virtual ~SawOsc();
-	virtual void tick() override;
+	void tick() override;
 	void setFreq(float freq) override;
 private:
 	float m_step;

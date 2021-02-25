@@ -12,8 +12,9 @@ SimpleDelay::SimpleDelay(IClockSource *clock) : TimeVariant(clock) {
 	m_feedback = 0.0f;
 	m_mix = 0.0;
 	m_source = nullptr;
-	m_get_at = 1;
-	m_put_at = 0;
+	//Since the whole buffer is used
+	m_front = 1;
+	m_back = 0;
 }
 
 SimpleDelay::~SimpleDelay() {
@@ -30,6 +31,8 @@ void SimpleDelay::SetMix(float mix){
 void SimpleDelay::SetTime(unsigned long time){
 	m_delay_time = time;
 	m_buffer.resize((time * m_clock_freq) / 1000);
+	m_front = 1;
+	m_back = 0;
 
 }
 
@@ -44,18 +47,18 @@ void SimpleDelay::tick(){
 	if(m_delay_time == 0){
 		m_out = m_source->get();
 	}
-	m_out = (m_buffer[m_get_at++] * m_mix) + (m_source->get() * (1.0f-m_mix));
-	if(m_get_at >= m_buffer.size()){
-		m_get_at = 0;
+	m_out = (m_buffer[m_front++] * m_mix) + (m_source->get() * (1.0f-m_mix));
+	if(m_front >= m_buffer.size()){
+		m_front = 0;
 	}
 	if(m_out > 1.0f){
 		m_out = 1.0f;
 	}else if(m_out < -1.0f){
 		m_out = -1.0f;
 	}
-	m_buffer[m_put_at++] = m_source->get() + (m_out * m_feedback);
-	if(m_put_at >= m_buffer.size()){
-		m_put_at = 0;
+	m_buffer[m_back++] = m_source->get() + (m_out * m_feedback);
+	if(m_back >= m_buffer.size()){
+		m_back = 0;
 	}
 
 }

@@ -10,6 +10,9 @@
 
 #include "IOsc.h"
 
+/**
+ * Triangle oscillator
+ */
 class TriangleOsc: public IOsc{
 public:
 	TriangleOsc(IClockSource *clock);

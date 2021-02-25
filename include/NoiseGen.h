@@ -9,11 +9,14 @@
 #define NOISEGEN_H_
 #include "IAudioModule.h"
 
+/**
+ * White noise generator
+ */
 class NoiseGen : public IAudioModule{
 public:
 	NoiseGen();
 	virtual ~NoiseGen();
-	virtual float get() override;
+	float get() override;
 };
 
 #endif /* NOISEGEN_H_ */

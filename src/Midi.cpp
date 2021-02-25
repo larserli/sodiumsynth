@@ -61,9 +61,8 @@ float Midi::ToFreq(std::string note){
 		}
 		pos++;
 	}
-	int octave = static_cast<int>(note[pos]) + '0';
-	notevalue += (octave * 12);
-	notevalue += 12;
+	int octave = static_cast<int>(note[pos]) - '0';
+	notevalue += ((octave + 1) * 12);
 	return ToFreq(notevalue);
 }
 

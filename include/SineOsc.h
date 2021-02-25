@@ -9,11 +9,14 @@
 #define SINEOSC_H_
 #include "IOsc.h"
 
+/**
+ * Sine wave oscillator
+ */
 class SineOsc : public IOsc{
 public:
 	SineOsc(IClockSource *clock, float frequency);
 	virtual ~SineOsc();
-	virtual void tick() override;
+	void tick() override;
 	void setFreq(float freq) override;
 private:
 	float m_step;

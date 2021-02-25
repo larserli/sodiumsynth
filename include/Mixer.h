@@ -9,13 +9,25 @@
 #define MIXER_H_
 #include <list>
 #include "IAudioModule.h"
+/**
+ * Mix down inputs
+ */
 class Mixer : public IAudioModule{
 public:
 	Mixer();
 	virtual ~Mixer();
-	virtual float get() override;
+	float get() override;
+	/**
+	 * Add a channel to the mixer
+	 */
 	void AddChannel(IAudioModule *channel, float level);
+	/**
+	 * Remove a channel from the mixer
+	 */
 	void RemoveChannel(IAudioModule *channel);
+	/**
+	 * Adjust channel level
+	 */
 	void SetLevel(IAudioModule *channel, float level);
 private:
 	struct channel{

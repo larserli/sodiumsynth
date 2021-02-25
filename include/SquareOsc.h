@@ -8,12 +8,20 @@
 #ifndef SQUAREOSC_H_
 #define SQUAREOSC_H_
 #include "IOsc.h"
+/**
+ * Square wave oscillator, supports pulse width modulation (PWM)
+ */
 class SquareOsc : public IOsc{
 public:
 	SquareOsc(IClockSource *clock, float frequency);
 	virtual ~SquareOsc();
 	void setFreq(float freq) override;
-	virtual void tick() override;
+	void tick() override;
+	/**
+	 * Set pulse with modulation
+	 * @param mod Modulation source
+	 * @param depth Modulation depth
+	 */
 	void SetPWMod(IOsc *mod, float depth);
 private:
 
