@@ -1,0 +1,11 @@
+<map id="include/Chorus.h" name="include/Chorus.h">
+<area shape="rect" id="node1" title=" " alt="" coords="230,5,361,32"/>
+<area shape="rect" id="node2" href="$IAudioModule_8h.html" title=" " alt="" coords="41,229,163,256"/>
+<area shape="rect" id="node3" href="$IClockSource_8h.html" title=" " alt="" coords="239,229,357,256"/>
+<area shape="rect" id="node6" href="$IOsc_8h.html" title=" " alt="" coords="5,80,68,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="333,80,396,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="421,80,498,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="283,304,326,331"/>
+<area shape="rect" id="node5" href="$ClockObserver_8h.html" title=" " alt="" coords="129,304,259,331"/>
+<area shape="rect" id="node7" href="$TimeVariant_8h.html" title=" " alt="" coords="144,155,257,181"/>
+</map>

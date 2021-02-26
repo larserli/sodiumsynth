@@ -1,0 +1,13 @@
+<map id="include/IOsc.h" name="include/IOsc.h">
+<area shape="rect" id="node1" title=" " alt="" coords="333,5,446,32"/>
+<area shape="rect" id="node2" href="$Chorus_8h.html" title=" " alt="" coords="165,80,296,107"/>
+<area shape="rect" id="node4" href="$SawOsc_8h.html" title=" " alt="" coords="5,80,141,107"/>
+<area shape="rect" id="node6" href="$SineOsc_8h.html" title=" " alt="" coords="321,80,458,107"/>
+<area shape="rect" id="node8" href="$SquareOsc_8h.html" title=" " alt="" coords="483,80,637,107"/>
+<area shape="rect" id="node10" href="$TriangleOsc_8h.html" title=" " alt="" coords="662,80,823,107"/>
+<area shape="rect" id="node3" href="$Chorus_8cpp.html" title=" " alt="" coords="179,155,296,181"/>
+<area shape="rect" id="node5" href="$SawOsc_8cpp.html" title=" " alt="" coords="12,155,135,181"/>
+<area shape="rect" id="node7" href="$SineOsc_8cpp.html" title=" " alt="" coords="327,155,451,181"/>
+<area shape="rect" id="node9" href="$SquareOsc_8cpp.html" title=" " alt="" coords="489,155,631,181"/>
+<area shape="rect" id="node11" href="$TriangleOsc_8cpp.html" title=" " alt="" coords="669,155,817,181"/>
+</map>

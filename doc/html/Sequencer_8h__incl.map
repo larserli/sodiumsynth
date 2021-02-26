@@ -1,0 +1,10 @@
+<map id="include/Sequencer.h" name="include/Sequencer.h">
+<area shape="rect" id="node1" title=" " alt="" coords="201,5,355,32"/>
+<area shape="rect" id="node2" href="$TimeVariant_8h.html" title=" " alt="" coords="111,80,224,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="249,80,307,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="332,80,395,107"/>
+<area shape="rect" id="node3" href="$ClockObserver_8h.html" title=" " alt="" coords="5,229,135,256"/>
+<area shape="rect" id="node4" href="$IClockSource_8h.html" title=" " alt="" coords="108,155,227,181"/>
+<area shape="rect" id="node6" href="$IAudioModule_8h.html" title=" " alt="" coords="251,155,374,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="159,229,202,256"/>
+</map>

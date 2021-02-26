@@ -1,0 +1,10 @@
+<map id="IOsc" name="IOsc">
+<area shape="rect" id="node1" title=" " alt="" coords="200,329,331,495"/>
+<area shape="rect" id="node5" href="$classSawOsc.html" title=" " alt="" coords="5,543,115,679"/>
+<area shape="rect" id="node6" href="$classSineOsc.html" title=" " alt="" coords="139,550,250,671"/>
+<area shape="rect" id="node7" href="$classSquareOsc.html" title=" " alt="" coords="274,543,401,679"/>
+<area shape="rect" id="node8" href="$classTriangleOsc.html" title=" " alt="" coords="425,543,559,679"/>
+<area shape="rect" id="node2" href="$classTimeVariant.html" title=" " alt="" coords="197,145,334,281"/>
+<area shape="rect" id="node3" href="$classClockObserver.html" title=" " alt="" coords="102,5,255,97"/>
+<area shape="rect" id="node4" href="$classIAudioModule.html" title=" " alt="" coords="280,5,427,97"/>
+</map>

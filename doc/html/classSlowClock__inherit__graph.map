@@ -1,0 +1,5 @@
+<map id="SlowClock" name="SlowClock">
+<area shape="rect" id="node1" title=" " alt="" coords="113,204,239,340"/>
+<area shape="rect" id="node2" href="$classIClockSource.html" title=" " alt="" coords="5,5,165,156"/>
+<area shape="rect" id="node3" href="$classClockObserver.html" title=" " alt="" coords="190,35,343,127"/>
+</map>

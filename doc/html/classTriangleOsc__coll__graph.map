@@ -1,0 +1,8 @@
+<map id="TriangleOsc" name="TriangleOsc">
+<area shape="rect" id="node1" title=" " alt="" coords="189,589,324,725"/>
+<area shape="rect" id="node2" href="$classIOsc.html" title=" " alt="" coords="191,389,322,540"/>
+<area shape="rect" id="node3" href="$classTimeVariant.html" title=" " alt="" coords="188,219,325,340"/>
+<area shape="rect" id="node4" href="$classClockObserver.html" title=" " alt="" coords="5,35,159,127"/>
+<area shape="rect" id="node5" href="$classIAudioModule.html" title=" " alt="" coords="183,35,330,127"/>
+<area shape="rect" id="node6" href="$classIClockSource.html" title=" " alt="" coords="354,5,514,156"/>
+</map>
