@@ -1,0 +1,105 @@
+\hypertarget{classChorus}{}\doxysection{Chorus Class Reference}
+\label{classChorus}\index{Chorus@{Chorus}}
+
+
+{\ttfamily \#include $<$Chorus.\+h$>$}
+
+
+
+Inheritance diagram for Chorus\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classChorus__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Chorus\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classChorus__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChorus_a26adce798dbc5a86d287551403bcf72c}{Chorus}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock)
+\item 
+virtual \mbox{\hyperlink{classChorus_a9523639e0b028e0847092fab8e93481f}{$\sim$\+Chorus}} ()
+\item 
+void \mbox{\hyperlink{classChorus_a989b4966f383425c65691a68deee2767}{set\+Source}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$source)
+\item 
+void \mbox{\hyperlink{classChorus_a4081074312705f7c633d7e4f5e14d669}{set\+Mod\+Depth}} (float depth)
+\item 
+void \mbox{\hyperlink{classChorus_a5c950db7756f051fc1f600c3c6a71f35}{set\+Mod\+Rate}} (float freq)
+\item 
+void \mbox{\hyperlink{classChorus_a8dc28c0fc97b09d444ad0b5ae8b9388c}{set\+Mix}} (float mix)
+\item 
+void \mbox{\hyperlink{classChorus_a55998b44ce12aa996772ae1398005f7b}{tick}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classChorus}{Chorus}} effect 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classChorus_a26adce798dbc5a86d287551403bcf72c}\label{classChorus_a26adce798dbc5a86d287551403bcf72c}} 
+\index{Chorus@{Chorus}!Chorus@{Chorus}}
+\index{Chorus@{Chorus}!Chorus@{Chorus}}
+\doxysubsubsection{\texorpdfstring{Chorus()}{Chorus()}}
+{\footnotesize\ttfamily Chorus\+::\+Chorus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChorus_a9523639e0b028e0847092fab8e93481f}\label{classChorus_a9523639e0b028e0847092fab8e93481f}} 
+\index{Chorus@{Chorus}!````~Chorus@{$\sim$Chorus}}
+\index{````~Chorus@{$\sim$Chorus}!Chorus@{Chorus}}
+\doxysubsubsection{\texorpdfstring{$\sim$Chorus()}{~Chorus()}}
+{\footnotesize\ttfamily Chorus\+::$\sim$\+Chorus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChorus_a8dc28c0fc97b09d444ad0b5ae8b9388c}\label{classChorus_a8dc28c0fc97b09d444ad0b5ae8b9388c}} 
+\index{Chorus@{Chorus}!setMix@{setMix}}
+\index{setMix@{setMix}!Chorus@{Chorus}}
+\doxysubsubsection{\texorpdfstring{setMix()}{setMix()}}
+{\footnotesize\ttfamily void Chorus\+::set\+Mix (\begin{DoxyParamCaption}\item[{float}]{mix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChorus_a4081074312705f7c633d7e4f5e14d669}\label{classChorus_a4081074312705f7c633d7e4f5e14d669}} 
+\index{Chorus@{Chorus}!setModDepth@{setModDepth}}
+\index{setModDepth@{setModDepth}!Chorus@{Chorus}}
+\doxysubsubsection{\texorpdfstring{setModDepth()}{setModDepth()}}
+{\footnotesize\ttfamily void Chorus\+::set\+Mod\+Depth (\begin{DoxyParamCaption}\item[{float}]{depth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChorus_a5c950db7756f051fc1f600c3c6a71f35}\label{classChorus_a5c950db7756f051fc1f600c3c6a71f35}} 
+\index{Chorus@{Chorus}!setModRate@{setModRate}}
+\index{setModRate@{setModRate}!Chorus@{Chorus}}
+\doxysubsubsection{\texorpdfstring{setModRate()}{setModRate()}}
+{\footnotesize\ttfamily void Chorus\+::set\+Mod\+Rate (\begin{DoxyParamCaption}\item[{float}]{freq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChorus_a989b4966f383425c65691a68deee2767}\label{classChorus_a989b4966f383425c65691a68deee2767}} 
+\index{Chorus@{Chorus}!setSource@{setSource}}
+\index{setSource@{setSource}!Chorus@{Chorus}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Chorus\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{source }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classChorus_a55998b44ce12aa996772ae1398005f7b}\label{classChorus_a55998b44ce12aa996772ae1398005f7b}} 
+\index{Chorus@{Chorus}!tick@{tick}}
+\index{tick@{tick}!Chorus@{Chorus}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Chorus\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update function 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Chorus_8h}{Chorus.\+h}}\item 
+src/\mbox{\hyperlink{Chorus_8cpp}{Chorus.\+cpp}}\end{DoxyCompactItemize}

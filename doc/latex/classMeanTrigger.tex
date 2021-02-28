@@ -1,0 +1,144 @@
+\hypertarget{classMeanTrigger}{}\doxysection{Mean\+Trigger Class Reference}
+\label{classMeanTrigger}\index{MeanTrigger@{MeanTrigger}}
+
+
+{\ttfamily \#include $<$Mean\+Trigger.\+h$>$}
+
+
+
+Inheritance diagram for Mean\+Trigger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classMeanTrigger__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mean\+Trigger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classMeanTrigger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMeanTrigger_a174bf19ab663fc00fb3eb0ad5fe0e175}{Mean\+Trigger}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock)
+\item 
+\mbox{\hyperlink{classMeanTrigger_a7d795dbd7bff8a1feefbfdb885479fe0}{$\sim$\+Mean\+Trigger}} ()
+\item 
+bool \mbox{\hyperlink{classMeanTrigger_a4fd49852d92eb71360c3b23a0140cd32}{is\+Active}} ()
+\item 
+void \mbox{\hyperlink{classMeanTrigger_a84454f6ab1e59d1c9b69bf2c770d7817}{tick}} () override
+\item 
+void \mbox{\hyperlink{classMeanTrigger_a85bdea378fdeabf26b0918a9ac295818}{set\+Level}} (float level, float hysteresis)
+\item 
+void \mbox{\hyperlink{classMeanTrigger_a12ca223e6f7ec3a78c081ad6bb3f0315}{set\+Source}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$source)
+\item 
+void \mbox{\hyperlink{classMeanTrigger_a12eefd9d1c4722d87426f88e3544cc37}{set\+Action\+On}} (std\+::function$<$ void(void)$>$ action)
+\item 
+void \mbox{\hyperlink{classMeanTrigger_a5f97e7177c1fb24da166a6d3ccd61a9e}{set\+Action\+Off}} (std\+::function$<$ void(void)$>$ action)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Trigger based on rolling average
+
+This module maintains a rolling average over a window. If the mean value exceeds a treshold, an action is raised, if defined. Another action is raised when the mean drops below the threshold. It is possible to define a hysteresis to avoid repeated actions when the level is close to the treshold. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMeanTrigger_a174bf19ab663fc00fb3eb0ad5fe0e175}\label{classMeanTrigger_a174bf19ab663fc00fb3eb0ad5fe0e175}} 
+\index{MeanTrigger@{MeanTrigger}!MeanTrigger@{MeanTrigger}}
+\index{MeanTrigger@{MeanTrigger}!MeanTrigger@{MeanTrigger}}
+\doxysubsubsection{\texorpdfstring{MeanTrigger()}{MeanTrigger()}}
+{\footnotesize\ttfamily Mean\+Trigger\+::\+Mean\+Trigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock }\end{DoxyParamCaption})}
+
+Class constructor 
+\begin{DoxyParams}{Parameters}
+{\em clock} & Master clock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMeanTrigger_a7d795dbd7bff8a1feefbfdb885479fe0}\label{classMeanTrigger_a7d795dbd7bff8a1feefbfdb885479fe0}} 
+\index{MeanTrigger@{MeanTrigger}!````~MeanTrigger@{$\sim$MeanTrigger}}
+\index{````~MeanTrigger@{$\sim$MeanTrigger}!MeanTrigger@{MeanTrigger}}
+\doxysubsubsection{\texorpdfstring{$\sim$MeanTrigger()}{~MeanTrigger()}}
+{\footnotesize\ttfamily Mean\+Trigger\+::$\sim$\+Mean\+Trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMeanTrigger_a4fd49852d92eb71360c3b23a0140cd32}\label{classMeanTrigger_a4fd49852d92eb71360c3b23a0140cd32}} 
+\index{MeanTrigger@{MeanTrigger}!isActive@{isActive}}
+\index{isActive@{isActive}!MeanTrigger@{MeanTrigger}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily bool Mean\+Trigger\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the trigger active? \begin{DoxyReturn}{Returns}
+true if the trigger is active 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMeanTrigger_a5f97e7177c1fb24da166a6d3ccd61a9e}\label{classMeanTrigger_a5f97e7177c1fb24da166a6d3ccd61a9e}} 
+\index{MeanTrigger@{MeanTrigger}!setActionOff@{setActionOff}}
+\index{setActionOff@{setActionOff}!MeanTrigger@{MeanTrigger}}
+\doxysubsubsection{\texorpdfstring{setActionOff()}{setActionOff()}}
+{\footnotesize\ttfamily void Mean\+Trigger\+::set\+Action\+Off (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(void)$>$}]{action }\end{DoxyParamCaption})}
+
+Assign an action to be raised when the level drops below the treshold. 
+\begin{DoxyParams}{Parameters}
+{\em action} & function object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMeanTrigger_a12eefd9d1c4722d87426f88e3544cc37}\label{classMeanTrigger_a12eefd9d1c4722d87426f88e3544cc37}} 
+\index{MeanTrigger@{MeanTrigger}!setActionOn@{setActionOn}}
+\index{setActionOn@{setActionOn}!MeanTrigger@{MeanTrigger}}
+\doxysubsubsection{\texorpdfstring{setActionOn()}{setActionOn()}}
+{\footnotesize\ttfamily void Mean\+Trigger\+::set\+Action\+On (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(void)$>$}]{action }\end{DoxyParamCaption})}
+
+Assign an action to be raised when the level rises above the treshold. 
+\begin{DoxyParams}{Parameters}
+{\em action} & function object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMeanTrigger_a85bdea378fdeabf26b0918a9ac295818}\label{classMeanTrigger_a85bdea378fdeabf26b0918a9ac295818}} 
+\index{MeanTrigger@{MeanTrigger}!setLevel@{setLevel}}
+\index{setLevel@{setLevel}!MeanTrigger@{MeanTrigger}}
+\doxysubsubsection{\texorpdfstring{setLevel()}{setLevel()}}
+{\footnotesize\ttfamily void Mean\+Trigger\+::set\+Level (\begin{DoxyParamCaption}\item[{float}]{level,  }\item[{float}]{hysteresis }\end{DoxyParamCaption})}
+
+Set treshold value 
+\begin{DoxyParams}{Parameters}
+{\em level} & treshold \\
+\hline
+{\em hysteresis} & hysteresis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMeanTrigger_a12ca223e6f7ec3a78c081ad6bb3f0315}\label{classMeanTrigger_a12ca223e6f7ec3a78c081ad6bb3f0315}} 
+\index{MeanTrigger@{MeanTrigger}!setSource@{setSource}}
+\index{setSource@{setSource}!MeanTrigger@{MeanTrigger}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Mean\+Trigger\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{source }\end{DoxyParamCaption})}
+
+Assign input (source) 
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMeanTrigger_a84454f6ab1e59d1c9b69bf2c770d7817}\label{classMeanTrigger_a84454f6ab1e59d1c9b69bf2c770d7817}} 
+\index{MeanTrigger@{MeanTrigger}!tick@{tick}}
+\index{tick@{tick}!MeanTrigger@{MeanTrigger}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Mean\+Trigger\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update function 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{MeanTrigger_8h}{Mean\+Trigger.\+h}}\item 
+src/\mbox{\hyperlink{MeanTrigger_8cpp}{Mean\+Trigger.\+cpp}}\end{DoxyCompactItemize}

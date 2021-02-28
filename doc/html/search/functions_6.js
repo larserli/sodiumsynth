@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['keydown_187',['KeyDown',['../classEnvelope.html#a5e3da711d4ae4c91f81163bc4ca9037f',1,'Envelope']]],
-  ['keyup_188',['KeyUp',['../classEnvelope.html#a573ef1d93ce4fc1a3ee50d0780895a50',1,'Envelope']]]
+  ['iclocksource_209',['IClockSource',['../classIClockSource.html#a7627d21ed02804c8db1945015c233637',1,'IClockSource']]],
+  ['iosc_210',['IOsc',['../classIOsc.html#a20a2102bb4b4f24a88f8116d221aa208',1,'IOsc']]],
+  ['isactive_211',['isActive',['../classMeanTrigger.html#a4fd49852d92eb71360c3b23a0140cd32',1,'MeanTrigger']]]
 ];

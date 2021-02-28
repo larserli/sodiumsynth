@@ -1,0 +1,93 @@
+\hypertarget{classTriangleOsc}{}\doxysection{Triangle\+Osc Class Reference}
+\label{classTriangleOsc}\index{TriangleOsc@{TriangleOsc}}
+
+
+{\ttfamily \#include $<$Triangle\+Osc.\+h$>$}
+
+
+
+Inheritance diagram for Triangle\+Osc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classTriangleOsc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Triangle\+Osc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTriangleOsc__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTriangleOsc_a9ad0c4d35aba48c5a7eb3f6f8658a94e}{Triangle\+Osc}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock)
+\item 
+\mbox{\hyperlink{classTriangleOsc_aae03ecdcf980396eb523cbca1f05e269}{Triangle\+Osc}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock, float freq)
+\item 
+virtual \mbox{\hyperlink{classTriangleOsc_a35162eade9566adc56820438cf511010}{$\sim$\+Triangle\+Osc}} ()
+\item 
+void \mbox{\hyperlink{classTriangleOsc_a3843bbfa0eb9782398e1403c48cad29a}{set\+Freq}} (float freq) override
+\item 
+void \mbox{\hyperlink{classTriangleOsc_ad31b5ddb7519d32e1f135c663ae32a4f}{tick}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Triangle oscillator 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTriangleOsc_a9ad0c4d35aba48c5a7eb3f6f8658a94e}\label{classTriangleOsc_a9ad0c4d35aba48c5a7eb3f6f8658a94e}} 
+\index{TriangleOsc@{TriangleOsc}!TriangleOsc@{TriangleOsc}}
+\index{TriangleOsc@{TriangleOsc}!TriangleOsc@{TriangleOsc}}
+\doxysubsubsection{\texorpdfstring{TriangleOsc()}{TriangleOsc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Triangle\+Osc\+::\+Triangle\+Osc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTriangleOsc_aae03ecdcf980396eb523cbca1f05e269}\label{classTriangleOsc_aae03ecdcf980396eb523cbca1f05e269}} 
+\index{TriangleOsc@{TriangleOsc}!TriangleOsc@{TriangleOsc}}
+\index{TriangleOsc@{TriangleOsc}!TriangleOsc@{TriangleOsc}}
+\doxysubsubsection{\texorpdfstring{TriangleOsc()}{TriangleOsc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Triangle\+Osc\+::\+Triangle\+Osc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock,  }\item[{float}]{freq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTriangleOsc_a35162eade9566adc56820438cf511010}\label{classTriangleOsc_a35162eade9566adc56820438cf511010}} 
+\index{TriangleOsc@{TriangleOsc}!````~TriangleOsc@{$\sim$TriangleOsc}}
+\index{````~TriangleOsc@{$\sim$TriangleOsc}!TriangleOsc@{TriangleOsc}}
+\doxysubsubsection{\texorpdfstring{$\sim$TriangleOsc()}{~TriangleOsc()}}
+{\footnotesize\ttfamily Triangle\+Osc\+::$\sim$\+Triangle\+Osc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTriangleOsc_a3843bbfa0eb9782398e1403c48cad29a}\label{classTriangleOsc_a3843bbfa0eb9782398e1403c48cad29a}} 
+\index{TriangleOsc@{TriangleOsc}!setFreq@{setFreq}}
+\index{setFreq@{setFreq}!TriangleOsc@{TriangleOsc}}
+\doxysubsubsection{\texorpdfstring{setFreq()}{setFreq()}}
+{\footnotesize\ttfamily void Triangle\+Osc\+::set\+Freq (\begin{DoxyParamCaption}\item[{float}]{freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set frequency (Hz) 
+
+Implements \mbox{\hyperlink{classIOsc_af9cad38e2a502c32a05b4611375729b8}{IOsc}}.
+
+\mbox{\Hypertarget{classTriangleOsc_ad31b5ddb7519d32e1f135c663ae32a4f}\label{classTriangleOsc_ad31b5ddb7519d32e1f135c663ae32a4f}} 
+\index{TriangleOsc@{TriangleOsc}!tick@{tick}}
+\index{tick@{tick}!TriangleOsc@{TriangleOsc}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Triangle\+Osc\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update function 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{TriangleOsc_8h}{Triangle\+Osc.\+h}}\item 
+src/\mbox{\hyperlink{TriangleOsc_8cpp}{Triangle\+Osc.\+cpp}}\end{DoxyCompactItemize}

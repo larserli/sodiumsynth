@@ -1,0 +1,94 @@
+\hypertarget{classSlowClock}{}\doxysection{Slow\+Clock Class Reference}
+\label{classSlowClock}\index{SlowClock@{SlowClock}}
+
+
+{\ttfamily \#include $<$Slow\+Clock.\+h$>$}
+
+
+
+Inheritance diagram for Slow\+Clock\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classSlowClock__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Slow\+Clock\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classSlowClock__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSlowClock_a631387bb80654bfa95007b13071b1a1f}{Slow\+Clock}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock)
+\item 
+\mbox{\hyperlink{classSlowClock_a6adfb03306f7c29d212e7a748c650101}{Slow\+Clock}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock, float rate)
+\item 
+virtual \mbox{\hyperlink{classSlowClock_a25c9223cbb3ef529ef48c5c540b11c41}{$\sim$\+Slow\+Clock}} ()
+\item 
+void \mbox{\hyperlink{classSlowClock_aa69833e18015b7043db45a69db03017a}{set\+Rate}} (float rate)
+\item 
+void \mbox{\hyperlink{classSlowClock_a4d986a96d64d147ddd6a9850de1d0a5d}{tick}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Generate a slow clock signal from a master clock The slow clock will tick all observers at a given frequency 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSlowClock_a631387bb80654bfa95007b13071b1a1f}\label{classSlowClock_a631387bb80654bfa95007b13071b1a1f}} 
+\index{SlowClock@{SlowClock}!SlowClock@{SlowClock}}
+\index{SlowClock@{SlowClock}!SlowClock@{SlowClock}}
+\doxysubsubsection{\texorpdfstring{SlowClock()}{SlowClock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Slow\+Clock\+::\+Slow\+Clock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSlowClock_a6adfb03306f7c29d212e7a748c650101}\label{classSlowClock_a6adfb03306f7c29d212e7a748c650101}} 
+\index{SlowClock@{SlowClock}!SlowClock@{SlowClock}}
+\index{SlowClock@{SlowClock}!SlowClock@{SlowClock}}
+\doxysubsubsection{\texorpdfstring{SlowClock()}{SlowClock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Slow\+Clock\+::\+Slow\+Clock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock,  }\item[{float}]{rate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSlowClock_a25c9223cbb3ef529ef48c5c540b11c41}\label{classSlowClock_a25c9223cbb3ef529ef48c5c540b11c41}} 
+\index{SlowClock@{SlowClock}!````~SlowClock@{$\sim$SlowClock}}
+\index{````~SlowClock@{$\sim$SlowClock}!SlowClock@{SlowClock}}
+\doxysubsubsection{\texorpdfstring{$\sim$SlowClock()}{~SlowClock()}}
+{\footnotesize\ttfamily Slow\+Clock\+::$\sim$\+Slow\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSlowClock_aa69833e18015b7043db45a69db03017a}\label{classSlowClock_aa69833e18015b7043db45a69db03017a}} 
+\index{SlowClock@{SlowClock}!setRate@{setRate}}
+\index{setRate@{setRate}!SlowClock@{SlowClock}}
+\doxysubsubsection{\texorpdfstring{setRate()}{setRate()}}
+{\footnotesize\ttfamily void Slow\+Clock\+::set\+Rate (\begin{DoxyParamCaption}\item[{float}]{rate }\end{DoxyParamCaption})}
+
+Set clock frequency (rate) 
+\begin{DoxyParams}{Parameters}
+{\em rate} & Frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSlowClock_a4d986a96d64d147ddd6a9850de1d0a5d}\label{classSlowClock_a4d986a96d64d147ddd6a9850de1d0a5d}} 
+\index{SlowClock@{SlowClock}!tick@{tick}}
+\index{tick@{tick}!SlowClock@{SlowClock}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Slow\+Clock\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Tick from the master clock 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{SlowClock_8h}{Slow\+Clock.\+h}}\item 
+src/\mbox{\hyperlink{SlowClock_8cpp}{Slow\+Clock.\+cpp}}\end{DoxyCompactItemize}

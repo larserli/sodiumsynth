@@ -1,0 +1,129 @@
+\hypertarget{classIOsc}{}\doxysection{IOsc Class Reference}
+\label{classIOsc}\index{IOsc@{IOsc}}
+
+
+{\ttfamily \#include $<$IOsc.\+h$>$}
+
+
+
+Inheritance diagram for IOsc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIOsc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IOsc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIOsc__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIOsc_a20a2102bb4b4f24a88f8116d221aa208}{IOsc}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock)
+\item 
+virtual void \mbox{\hyperlink{classIOsc_af9cad38e2a502c32a05b4611375729b8}{set\+Freq}} (float freq)=0
+\item 
+virtual \mbox{\hyperlink{classIOsc_a8a67d3ee9efde08403abb8a6acde9e6e}{$\sim$\+IOsc}} ()
+\item 
+void \mbox{\hyperlink{classIOsc_a1a9ddbd3e66f395641ec52a9b402ae77}{set\+Lfo}} (\mbox{\hyperlink{classIOsc}{IOsc}} $\ast$lfo, float depth)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classIOsc_a94d7ac25836ed5928a6bb47acd9fd884}{m\+\_\+val}}
+\item 
+float \mbox{\hyperlink{classIOsc_a01a5a1ce43d189e6642e59afdeec7ad0}{m\+\_\+freq}}
+\item 
+\mbox{\hyperlink{classIOsc}{IOsc}} $\ast$ \mbox{\hyperlink{classIOsc_a17cf10b5fa76ebb18a76168fcb7543c2}{m\+\_\+lfo}}
+\item 
+float \mbox{\hyperlink{classIOsc_aa47b0aea89209f57607146036391f47a}{m\+\_\+mod\+\_\+depth}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Oscillator base An oscillator is any module that will produce a periodic signal at a defined frequency 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIOsc_a20a2102bb4b4f24a88f8116d221aa208}\label{classIOsc_a20a2102bb4b4f24a88f8116d221aa208}} 
+\index{IOsc@{IOsc}!IOsc@{IOsc}}
+\index{IOsc@{IOsc}!IOsc@{IOsc}}
+\doxysubsubsection{\texorpdfstring{IOsc()}{IOsc()}}
+{\footnotesize\ttfamily IOsc\+::\+IOsc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em clock} & Clock source \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIOsc_a8a67d3ee9efde08403abb8a6acde9e6e}\label{classIOsc_a8a67d3ee9efde08403abb8a6acde9e6e}} 
+\index{IOsc@{IOsc}!````~IOsc@{$\sim$IOsc}}
+\index{````~IOsc@{$\sim$IOsc}!IOsc@{IOsc}}
+\doxysubsubsection{\texorpdfstring{$\sim$IOsc()}{~IOsc()}}
+{\footnotesize\ttfamily virtual IOsc\+::$\sim$\+IOsc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIOsc_af9cad38e2a502c32a05b4611375729b8}\label{classIOsc_af9cad38e2a502c32a05b4611375729b8}} 
+\index{IOsc@{IOsc}!setFreq@{setFreq}}
+\index{setFreq@{setFreq}!IOsc@{IOsc}}
+\doxysubsubsection{\texorpdfstring{setFreq()}{setFreq()}}
+{\footnotesize\ttfamily virtual void IOsc\+::set\+Freq (\begin{DoxyParamCaption}\item[{float}]{freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set frequency (Hz) 
+
+Implemented in \mbox{\hyperlink{classTriangleOsc_a3843bbfa0eb9782398e1403c48cad29a}{Triangle\+Osc}}, \mbox{\hyperlink{classSquareOsc_a499ca00a3125936e7b7ae0f53ceef052}{Square\+Osc}}, \mbox{\hyperlink{classSineOsc_a3499c6dccf9bee65f41623d45b622a30}{Sine\+Osc}}, and \mbox{\hyperlink{classSawOsc_a61cbe5de1ed8e3bbc6aae2816f3a86d5}{Saw\+Osc}}.
+
+\mbox{\Hypertarget{classIOsc_a1a9ddbd3e66f395641ec52a9b402ae77}\label{classIOsc_a1a9ddbd3e66f395641ec52a9b402ae77}} 
+\index{IOsc@{IOsc}!setLfo@{setLfo}}
+\index{setLfo@{setLfo}!IOsc@{IOsc}}
+\doxysubsubsection{\texorpdfstring{setLfo()}{setLfo()}}
+{\footnotesize\ttfamily void IOsc\+::set\+Lfo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIOsc}{IOsc}} $\ast$}]{lfo,  }\item[{float}]{depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Modulating signal (frequency modulation) 
+\begin{DoxyParams}{Parameters}
+{\em lfo} & Oscillator object \\
+\hline
+{\em depth} & Modulation depth \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classIOsc_a01a5a1ce43d189e6642e59afdeec7ad0}\label{classIOsc_a01a5a1ce43d189e6642e59afdeec7ad0}} 
+\index{IOsc@{IOsc}!m\_freq@{m\_freq}}
+\index{m\_freq@{m\_freq}!IOsc@{IOsc}}
+\doxysubsubsection{\texorpdfstring{m\_freq}{m\_freq}}
+{\footnotesize\ttfamily float IOsc\+::m\+\_\+freq\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIOsc_a17cf10b5fa76ebb18a76168fcb7543c2}\label{classIOsc_a17cf10b5fa76ebb18a76168fcb7543c2}} 
+\index{IOsc@{IOsc}!m\_lfo@{m\_lfo}}
+\index{m\_lfo@{m\_lfo}!IOsc@{IOsc}}
+\doxysubsubsection{\texorpdfstring{m\_lfo}{m\_lfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIOsc}{IOsc}}$\ast$ IOsc\+::m\+\_\+lfo\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIOsc_aa47b0aea89209f57607146036391f47a}\label{classIOsc_aa47b0aea89209f57607146036391f47a}} 
+\index{IOsc@{IOsc}!m\_mod\_depth@{m\_mod\_depth}}
+\index{m\_mod\_depth@{m\_mod\_depth}!IOsc@{IOsc}}
+\doxysubsubsection{\texorpdfstring{m\_mod\_depth}{m\_mod\_depth}}
+{\footnotesize\ttfamily float IOsc\+::m\+\_\+mod\+\_\+depth\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classIOsc_a94d7ac25836ed5928a6bb47acd9fd884}\label{classIOsc_a94d7ac25836ed5928a6bb47acd9fd884}} 
+\index{IOsc@{IOsc}!m\_val@{m\_val}}
+\index{m\_val@{m\_val}!IOsc@{IOsc}}
+\doxysubsubsection{\texorpdfstring{m\_val}{m\_val}}
+{\footnotesize\ttfamily float IOsc\+::m\+\_\+val\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{IOsc_8h}{IOsc.\+h}}\end{DoxyCompactItemize}

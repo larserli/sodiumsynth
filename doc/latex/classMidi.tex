@@ -1,0 +1,54 @@
+\hypertarget{classMidi}{}\doxysection{Midi Class Reference}
+\label{classMidi}\index{Midi@{Midi}}
+
+
+{\ttfamily \#include $<$Midi.\+h$>$}
+
+
+
+Collaboration diagram for Midi\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classMidi__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classMidi_a3beda7e2e4340e68b4287af05228900e}{To\+Freq}} (unsigned int note)
+\item 
+static float \mbox{\hyperlink{classMidi_a9829326351f7177d4d1bb97d8f292d5a}{To\+Freq}} (std\+::string note)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classMidi}{Midi}} functions 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMidi_a9829326351f7177d4d1bb97d8f292d5a}\label{classMidi_a9829326351f7177d4d1bb97d8f292d5a}} 
+\index{Midi@{Midi}!ToFreq@{ToFreq}}
+\index{ToFreq@{ToFreq}!Midi@{Midi}}
+\doxysubsubsection{\texorpdfstring{ToFreq()}{ToFreq()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float Midi\+::\+To\+Freq (\begin{DoxyParamCaption}\item[{std\+::string}]{note }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert a note value to frequency Note values are stored on the following format\+: Note -\/ Modifier -\/ Octave
+
+Example\+:
+\begin{DoxyItemize}
+\item G\#5
+\item A3
+\item Bb6 
+\end{DoxyItemize}\mbox{\Hypertarget{classMidi_a3beda7e2e4340e68b4287af05228900e}\label{classMidi_a3beda7e2e4340e68b4287af05228900e}} 
+\index{Midi@{Midi}!ToFreq@{ToFreq}}
+\index{ToFreq@{ToFreq}!Midi@{Midi}}
+\doxysubsubsection{\texorpdfstring{ToFreq()}{ToFreq()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float Midi\+::\+To\+Freq (\begin{DoxyParamCaption}\item[{unsigned int}]{note }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert a MIDI note value to frequency 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Midi_8h}{Midi.\+h}}\item 
+src/\mbox{\hyperlink{Midi_8cpp}{Midi.\+cpp}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['randomgenerator_129',['RandomGenerator',['../classRandomGenerator.html',1,'']]]
+  ['noisegen_147',['NoiseGen',['../classNoiseGen.html',1,'']]]
 ];

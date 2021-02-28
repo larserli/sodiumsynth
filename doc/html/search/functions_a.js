@@ -1,29 +1,7 @@
 var searchData=
 [
-  ['sawosc_195',['SawOsc',['../classSawOsc.html#a6a1c1430b6299005b422556fb1770cd5',1,'SawOsc::SawOsc(IClockSource *clock)'],['../classSawOsc.html#ac5376b53d7ea759be65cf0914d7fd370',1,'SawOsc::SawOsc(IClockSource *clock, float frequency)']]],
-  ['sequencer_196',['Sequencer',['../classSequencer.html#adaaba972cb59d607ce79b8b0338cf7bb',1,'Sequencer::Sequencer(IClockSource *clock, std::vector&lt; int &gt; sequence)'],['../classSequencer.html#a2e1688c03632f85259dc7ecc7446196e',1,'Sequencer::Sequencer(IClockSource *clock, std::vector&lt; std::string &gt; sequence)'],['../classSequencer.html#ac9626e53a8786bfd168fdcfcc3e05047',1,'Sequencer::Sequencer(IClockSource *clock)']]],
-  ['setattack_197',['setAttack',['../classEnvelope.html#ae013e920c87636de988db3026bbdb3b2',1,'Envelope']]],
-  ['setdecay_198',['setDecay',['../classEnvelope.html#aed489f83a4f657c7c799e0090a911ed1',1,'Envelope']]],
-  ['setfeedback_199',['SetFeedback',['../classSimpleDelay.html#ab36c358cee820741e09262fa739a761a',1,'SimpleDelay']]],
-  ['setfreq_200',['setFreq',['../classSquareOsc.html#a499ca00a3125936e7b7ae0f53ceef052',1,'SquareOsc::setFreq()'],['../classTriangleOsc.html#a3843bbfa0eb9782398e1403c48cad29a',1,'TriangleOsc::setFreq()'],['../classSineOsc.html#a3499c6dccf9bee65f41623d45b622a30',1,'SineOsc::setFreq()'],['../classSawOsc.html#a61cbe5de1ed8e3bbc6aae2816f3a86d5',1,'SawOsc::setFreq()'],['../classIOsc.html#af9cad38e2a502c32a05b4611375729b8',1,'IOsc::setFreq()']]],
-  ['setgain_201',['setGain',['../classDistortion.html#a0330170a0adba0f3eea4a672b549e391',1,'Distortion']]],
-  ['setlevel_202',['SetLevel',['../classAmp.html#a2e07ec0e38c65b2d404571360843d9e9',1,'Amp::SetLevel()'],['../classMixer.html#ada1113026656848a32ba0d41740667a7',1,'Mixer::SetLevel()']]],
-  ['setlfo_203',['setLfo',['../classIOsc.html#a1a9ddbd3e66f395641ec52a9b402ae77',1,'IOsc']]],
-  ['setmix_204',['setMix',['../classChorus.html#a8dc28c0fc97b09d444ad0b5ae8b9388c',1,'Chorus']]],
-  ['setmix_205',['SetMix',['../classSimpleDelay.html#a5ce83f0c6c28ad71519e17aba20d41be',1,'SimpleDelay']]],
-  ['setmod_206',['SetMod',['../classAmp.html#afdf4eef81898aa5c821bf1578af01497',1,'Amp']]],
-  ['setmoddepth_207',['setModDepth',['../classChorus.html#a4081074312705f7c633d7e4f5e14d669',1,'Chorus']]],
-  ['setmodrate_208',['setModRate',['../classChorus.html#a5c950db7756f051fc1f600c3c6a71f35',1,'Chorus']]],
-  ['setpwmod_209',['SetPWMod',['../classSquareOsc.html#a0b9f86a6120d8dd104c3887dd7610d6e',1,'SquareOsc']]],
-  ['setrate_210',['setRate',['../classSlowClock.html#aa69833e18015b7043db45a69db03017a',1,'SlowClock']]],
-  ['setrelease_211',['setRelease',['../classEnvelope.html#aeaf88d793483a551627f334fb0639f9b',1,'Envelope']]],
-  ['setsequence_212',['setSequence',['../classSequencer.html#aacfd66741623e8a29a7fac3177d7897f',1,'Sequencer::setSequence(std::vector&lt; int &gt; sequence)'],['../classSequencer.html#a13c4a70c08a5520dd4df166af013e3e3',1,'Sequencer::setSequence(std::vector&lt; std::string &gt; sequence)']]],
-  ['setsource_213',['setSource',['../classChorus.html#a989b4966f383425c65691a68deee2767',1,'Chorus::setSource()'],['../classDistortion.html#a36519730ce459ca2434eff193f46fe1f',1,'Distortion::setSource()']]],
-  ['setsource_214',['SetSource',['../classSimpleDelay.html#a609e15f57bdcbe41cb10c38368c4734a',1,'SimpleDelay::SetSource()'],['../classAmp.html#a6c082603685691e708b1f17b111dbe87',1,'Amp::SetSource()']]],
-  ['setsustain_215',['setSustain',['../classEnvelope.html#ad4c46a78634703e4c699b422852e60ee',1,'Envelope']]],
-  ['settime_216',['SetTime',['../classSimpleDelay.html#a4e31f7f88ce4a56893af2a833d78c6d4',1,'SimpleDelay']]],
-  ['simpledelay_217',['SimpleDelay',['../classSimpleDelay.html#a90d69fc24a03c52eaf5f82d70e6eefee',1,'SimpleDelay']]],
-  ['sineosc_218',['SineOsc',['../classSineOsc.html#a4f548447380a3ad1a733a2c395d21ac2',1,'SineOsc']]],
-  ['slowclock_219',['SlowClock',['../classSlowClock.html#a631387bb80654bfa95007b13071b1a1f',1,'SlowClock::SlowClock(IClockSource *clock)'],['../classSlowClock.html#a6adfb03306f7c29d212e7a748c650101',1,'SlowClock::SlowClock(IClockSource *clock, float rate)']]],
-  ['squareosc_220',['SquareOsc',['../classSquareOsc.html#aebffe17a328c9956b81dac971c98de4a',1,'SquareOsc']]]
+  ['randomgenerator_217',['RandomGenerator',['../classRandomGenerator.html#a3db1789efad8d1a04627950d21ab361c',1,'RandomGenerator']]],
+  ['registeraction_218',['registerAction',['../classRandomGenerator.html#acaee759c05de107416e7234cfd081149',1,'RandomGenerator']]],
+  ['removechannel_219',['RemoveChannel',['../classMixer.html#a59f6357d63273e91f191253bf61de7b4',1,'Mixer']]],
+  ['removeobserver_220',['RemoveObserver',['../classIClockSource.html#a9452e7e4806dd596a2ffee03ad3689cd',1,'IClockSource']]]
 ];

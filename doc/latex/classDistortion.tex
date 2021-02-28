@@ -1,0 +1,91 @@
+\hypertarget{classDistortion}{}\doxysection{Distortion Class Reference}
+\label{classDistortion}\index{Distortion@{Distortion}}
+
+
+{\ttfamily \#include $<$Distortion.\+h$>$}
+
+
+
+Inheritance diagram for Distortion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classDistortion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Distortion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classDistortion__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDistortion_af712b1eb22bc79f96a2febc3e21b859a}{Distortion}} ()
+\item 
+\mbox{\hyperlink{classDistortion_a40b261d900f64ef5e07c7a6f018b5f84}{$\sim$\+Distortion}} ()
+\item 
+void \mbox{\hyperlink{classDistortion_a36519730ce459ca2434eff193f46fe1f}{set\+Source}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$source)
+\item 
+void \mbox{\hyperlink{classDistortion_a0330170a0adba0f3eea4a672b549e391}{set\+Gain}} (float gain)
+\item 
+float \mbox{\hyperlink{classDistortion_adb4484f099792a9c8369f084b540cf26}{get}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classDistortion}{Distortion}} effect. Uses an S-\/curve function to clip the signal 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDistortion_af712b1eb22bc79f96a2febc3e21b859a}\label{classDistortion_af712b1eb22bc79f96a2febc3e21b859a}} 
+\index{Distortion@{Distortion}!Distortion@{Distortion}}
+\index{Distortion@{Distortion}!Distortion@{Distortion}}
+\doxysubsubsection{\texorpdfstring{Distortion()}{Distortion()}}
+{\footnotesize\ttfamily Distortion\+::\+Distortion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDistortion_a40b261d900f64ef5e07c7a6f018b5f84}\label{classDistortion_a40b261d900f64ef5e07c7a6f018b5f84}} 
+\index{Distortion@{Distortion}!````~Distortion@{$\sim$Distortion}}
+\index{````~Distortion@{$\sim$Distortion}!Distortion@{Distortion}}
+\doxysubsubsection{\texorpdfstring{$\sim$Distortion()}{~Distortion()}}
+{\footnotesize\ttfamily Distortion\+::$\sim$\+Distortion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDistortion_adb4484f099792a9c8369f084b540cf26}\label{classDistortion_adb4484f099792a9c8369f084b540cf26}} 
+\index{Distortion@{Distortion}!get@{get}}
+\index{get@{get}!Distortion@{Distortion}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily float Distortion\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get a sample \begin{DoxyReturn}{Returns}
+float \mbox{[}0-\/1\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIAudioModule_a2779c082055cd93d3f3abe4b7cbb9b89}{IAudio\+Module}}.
+
+\mbox{\Hypertarget{classDistortion_a0330170a0adba0f3eea4a672b549e391}\label{classDistortion_a0330170a0adba0f3eea4a672b549e391}} 
+\index{Distortion@{Distortion}!setGain@{setGain}}
+\index{setGain@{setGain}!Distortion@{Distortion}}
+\doxysubsubsection{\texorpdfstring{setGain()}{setGain()}}
+{\footnotesize\ttfamily void Distortion\+::set\+Gain (\begin{DoxyParamCaption}\item[{float}]{gain }\end{DoxyParamCaption})}
+
+Set input gain \mbox{\Hypertarget{classDistortion_a36519730ce459ca2434eff193f46fe1f}\label{classDistortion_a36519730ce459ca2434eff193f46fe1f}} 
+\index{Distortion@{Distortion}!setSource@{setSource}}
+\index{setSource@{setSource}!Distortion@{Distortion}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Distortion\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{source }\end{DoxyParamCaption})}
+
+Set source (input) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Distortion_8h}{Distortion.\+h}}\item 
+src/\mbox{\hyperlink{Distortion_8cpp}{Distortion.\+cpp}}\end{DoxyCompactItemize}

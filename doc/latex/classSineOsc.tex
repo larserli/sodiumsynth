@@ -1,0 +1,85 @@
+\hypertarget{classSineOsc}{}\doxysection{Sine\+Osc Class Reference}
+\label{classSineOsc}\index{SineOsc@{SineOsc}}
+
+
+{\ttfamily \#include $<$Sine\+Osc.\+h$>$}
+
+
+
+Inheritance diagram for Sine\+Osc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSineOsc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sine\+Osc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSineOsc__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSineOsc_a4f548447380a3ad1a733a2c395d21ac2}{Sine\+Osc}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock, float frequency)
+\item 
+virtual \mbox{\hyperlink{classSineOsc_a6163b3d2f8a171a734b131a1d9720113}{$\sim$\+Sine\+Osc}} ()
+\item 
+void \mbox{\hyperlink{classSineOsc_a3256a47de2d5f5b653edab6756c6a8e1}{tick}} () override
+\item 
+void \mbox{\hyperlink{classSineOsc_a3499c6dccf9bee65f41623d45b622a30}{set\+Freq}} (float freq) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Sine wave oscillator 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSineOsc_a4f548447380a3ad1a733a2c395d21ac2}\label{classSineOsc_a4f548447380a3ad1a733a2c395d21ac2}} 
+\index{SineOsc@{SineOsc}!SineOsc@{SineOsc}}
+\index{SineOsc@{SineOsc}!SineOsc@{SineOsc}}
+\doxysubsubsection{\texorpdfstring{SineOsc()}{SineOsc()}}
+{\footnotesize\ttfamily Sine\+Osc\+::\+Sine\+Osc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock,  }\item[{float}]{frequency }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSineOsc_a6163b3d2f8a171a734b131a1d9720113}\label{classSineOsc_a6163b3d2f8a171a734b131a1d9720113}} 
+\index{SineOsc@{SineOsc}!````~SineOsc@{$\sim$SineOsc}}
+\index{````~SineOsc@{$\sim$SineOsc}!SineOsc@{SineOsc}}
+\doxysubsubsection{\texorpdfstring{$\sim$SineOsc()}{~SineOsc()}}
+{\footnotesize\ttfamily Sine\+Osc\+::$\sim$\+Sine\+Osc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSineOsc_a3499c6dccf9bee65f41623d45b622a30}\label{classSineOsc_a3499c6dccf9bee65f41623d45b622a30}} 
+\index{SineOsc@{SineOsc}!setFreq@{setFreq}}
+\index{setFreq@{setFreq}!SineOsc@{SineOsc}}
+\doxysubsubsection{\texorpdfstring{setFreq()}{setFreq()}}
+{\footnotesize\ttfamily void Sine\+Osc\+::set\+Freq (\begin{DoxyParamCaption}\item[{float}]{freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set frequency (Hz) 
+
+Implements \mbox{\hyperlink{classIOsc_af9cad38e2a502c32a05b4611375729b8}{IOsc}}.
+
+\mbox{\Hypertarget{classSineOsc_a3256a47de2d5f5b653edab6756c6a8e1}\label{classSineOsc_a3256a47de2d5f5b653edab6756c6a8e1}} 
+\index{SineOsc@{SineOsc}!tick@{tick}}
+\index{tick@{tick}!SineOsc@{SineOsc}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Sine\+Osc\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update function 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{SineOsc_8h}{Sine\+Osc.\+h}}\item 
+src/\mbox{\hyperlink{SineOsc_8cpp}{Sine\+Osc.\+cpp}}\end{DoxyCompactItemize}

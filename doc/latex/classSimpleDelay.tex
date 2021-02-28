@@ -1,0 +1,105 @@
+\hypertarget{classSimpleDelay}{}\doxysection{Simple\+Delay Class Reference}
+\label{classSimpleDelay}\index{SimpleDelay@{SimpleDelay}}
+
+
+{\ttfamily \#include $<$Simple\+Delay.\+h$>$}
+
+
+
+Inheritance diagram for Simple\+Delay\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classSimpleDelay__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simple\+Delay\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSimpleDelay__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSimpleDelay_a90d69fc24a03c52eaf5f82d70e6eefee}{Simple\+Delay}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock)
+\item 
+virtual \mbox{\hyperlink{classSimpleDelay_a4fc4ee578d758f21ea7526999be49f4e}{$\sim$\+Simple\+Delay}} ()
+\item 
+void \mbox{\hyperlink{classSimpleDelay_a4e31f7f88ce4a56893af2a833d78c6d4}{Set\+Time}} (unsigned long time)
+\item 
+void \mbox{\hyperlink{classSimpleDelay_ab36c358cee820741e09262fa739a761a}{Set\+Feedback}} (float feedback)
+\item 
+void \mbox{\hyperlink{classSimpleDelay_a5ce83f0c6c28ad71519e17aba20d41be}{Set\+Mix}} (float mix)
+\item 
+void \mbox{\hyperlink{classSimpleDelay_a609e15f57bdcbe41cb10c38368c4734a}{Set\+Source}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$source)
+\item 
+void \mbox{\hyperlink{classSimpleDelay_a17e988f60439df2ec76c252963b186c1}{tick}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Single delay effect 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSimpleDelay_a90d69fc24a03c52eaf5f82d70e6eefee}\label{classSimpleDelay_a90d69fc24a03c52eaf5f82d70e6eefee}} 
+\index{SimpleDelay@{SimpleDelay}!SimpleDelay@{SimpleDelay}}
+\index{SimpleDelay@{SimpleDelay}!SimpleDelay@{SimpleDelay}}
+\doxysubsubsection{\texorpdfstring{SimpleDelay()}{SimpleDelay()}}
+{\footnotesize\ttfamily Simple\+Delay\+::\+Simple\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimpleDelay_a4fc4ee578d758f21ea7526999be49f4e}\label{classSimpleDelay_a4fc4ee578d758f21ea7526999be49f4e}} 
+\index{SimpleDelay@{SimpleDelay}!````~SimpleDelay@{$\sim$SimpleDelay}}
+\index{````~SimpleDelay@{$\sim$SimpleDelay}!SimpleDelay@{SimpleDelay}}
+\doxysubsubsection{\texorpdfstring{$\sim$SimpleDelay()}{~SimpleDelay()}}
+{\footnotesize\ttfamily Simple\+Delay\+::$\sim$\+Simple\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSimpleDelay_ab36c358cee820741e09262fa739a761a}\label{classSimpleDelay_ab36c358cee820741e09262fa739a761a}} 
+\index{SimpleDelay@{SimpleDelay}!SetFeedback@{SetFeedback}}
+\index{SetFeedback@{SetFeedback}!SimpleDelay@{SimpleDelay}}
+\doxysubsubsection{\texorpdfstring{SetFeedback()}{SetFeedback()}}
+{\footnotesize\ttfamily void Simple\+Delay\+::\+Set\+Feedback (\begin{DoxyParamCaption}\item[{float}]{feedback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimpleDelay_a5ce83f0c6c28ad71519e17aba20d41be}\label{classSimpleDelay_a5ce83f0c6c28ad71519e17aba20d41be}} 
+\index{SimpleDelay@{SimpleDelay}!SetMix@{SetMix}}
+\index{SetMix@{SetMix}!SimpleDelay@{SimpleDelay}}
+\doxysubsubsection{\texorpdfstring{SetMix()}{SetMix()}}
+{\footnotesize\ttfamily void Simple\+Delay\+::\+Set\+Mix (\begin{DoxyParamCaption}\item[{float}]{mix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimpleDelay_a609e15f57bdcbe41cb10c38368c4734a}\label{classSimpleDelay_a609e15f57bdcbe41cb10c38368c4734a}} 
+\index{SimpleDelay@{SimpleDelay}!SetSource@{SetSource}}
+\index{SetSource@{SetSource}!SimpleDelay@{SimpleDelay}}
+\doxysubsubsection{\texorpdfstring{SetSource()}{SetSource()}}
+{\footnotesize\ttfamily void Simple\+Delay\+::\+Set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{source }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimpleDelay_a4e31f7f88ce4a56893af2a833d78c6d4}\label{classSimpleDelay_a4e31f7f88ce4a56893af2a833d78c6d4}} 
+\index{SimpleDelay@{SimpleDelay}!SetTime@{SetTime}}
+\index{SetTime@{SetTime}!SimpleDelay@{SimpleDelay}}
+\doxysubsubsection{\texorpdfstring{SetTime()}{SetTime()}}
+{\footnotesize\ttfamily void Simple\+Delay\+::\+Set\+Time (\begin{DoxyParamCaption}\item[{unsigned long}]{time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimpleDelay_a17e988f60439df2ec76c252963b186c1}\label{classSimpleDelay_a17e988f60439df2ec76c252963b186c1}} 
+\index{SimpleDelay@{SimpleDelay}!tick@{tick}}
+\index{tick@{tick}!SimpleDelay@{SimpleDelay}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Simple\+Delay\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update function 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{SimpleDelay_8h}{Simple\+Delay.\+h}}\item 
+src/\mbox{\hyperlink{SimpleDelay_8cpp}{Simple\+Delay.\+cpp}}\end{DoxyCompactItemize}

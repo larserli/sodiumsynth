@@ -1,0 +1,113 @@
+\hypertarget{classAmp}{}\doxysection{Amp Class Reference}
+\label{classAmp}\index{Amp@{Amp}}
+
+
+{\ttfamily \#include $<$Amp.\+h$>$}
+
+
+
+Inheritance diagram for Amp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classAmp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Amp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classAmp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAmp_a9d19bd9c58c9e9696842a1baf3b8a52e}{Amp}} ()
+\item 
+virtual \mbox{\hyperlink{classAmp_a002ab3573f076aecd3521410d776b26b}{$\sim$\+Amp}} ()
+\item 
+void \mbox{\hyperlink{classAmp_a6c082603685691e708b1f17b111dbe87}{Set\+Source}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$source)
+\item 
+void \mbox{\hyperlink{classAmp_a2e07ec0e38c65b2d404571360843d9e9}{Set\+Level}} (float level)
+\item 
+void \mbox{\hyperlink{classAmp_afdf4eef81898aa5c821bf1578af01497}{Set\+Mod}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$mod, float level)
+\item 
+float \mbox{\hyperlink{classAmp_a34c8f279d4b6605a2d38a98bb611bdde}{get}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Amplifier module. Changes the amplitude of an audio signal Supports modulation input 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAmp_a9d19bd9c58c9e9696842a1baf3b8a52e}\label{classAmp_a9d19bd9c58c9e9696842a1baf3b8a52e}} 
+\index{Amp@{Amp}!Amp@{Amp}}
+\index{Amp@{Amp}!Amp@{Amp}}
+\doxysubsubsection{\texorpdfstring{Amp()}{Amp()}}
+{\footnotesize\ttfamily Amp\+::\+Amp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAmp_a002ab3573f076aecd3521410d776b26b}\label{classAmp_a002ab3573f076aecd3521410d776b26b}} 
+\index{Amp@{Amp}!````~Amp@{$\sim$Amp}}
+\index{````~Amp@{$\sim$Amp}!Amp@{Amp}}
+\doxysubsubsection{\texorpdfstring{$\sim$Amp()}{~Amp()}}
+{\footnotesize\ttfamily Amp\+::$\sim$\+Amp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAmp_a34c8f279d4b6605a2d38a98bb611bdde}\label{classAmp_a34c8f279d4b6605a2d38a98bb611bdde}} 
+\index{Amp@{Amp}!get@{get}}
+\index{get@{get}!Amp@{Amp}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily float Amp\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get audio output 
+
+Implements \mbox{\hyperlink{classIAudioModule_a2779c082055cd93d3f3abe4b7cbb9b89}{IAudio\+Module}}.
+
+\mbox{\Hypertarget{classAmp_a2e07ec0e38c65b2d404571360843d9e9}\label{classAmp_a2e07ec0e38c65b2d404571360843d9e9}} 
+\index{Amp@{Amp}!SetLevel@{SetLevel}}
+\index{SetLevel@{SetLevel}!Amp@{Amp}}
+\doxysubsubsection{\texorpdfstring{SetLevel()}{SetLevel()}}
+{\footnotesize\ttfamily void Amp\+::\+Set\+Level (\begin{DoxyParamCaption}\item[{float}]{level }\end{DoxyParamCaption})}
+
+Set gain (level) 
+\begin{DoxyParams}{Parameters}
+{\em level} & \mbox{[}0-\/..\mbox{]} 1.\+0 is unity gain \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAmp_afdf4eef81898aa5c821bf1578af01497}\label{classAmp_afdf4eef81898aa5c821bf1578af01497}} 
+\index{Amp@{Amp}!SetMod@{SetMod}}
+\index{SetMod@{SetMod}!Amp@{Amp}}
+\doxysubsubsection{\texorpdfstring{SetMod()}{SetMod()}}
+{\footnotesize\ttfamily void Amp\+::\+Set\+Mod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{mod,  }\item[{float}]{level }\end{DoxyParamCaption})}
+
+Set mod source 
+\begin{DoxyParams}{Parameters}
+{\em mod} & Mod source \\
+\hline
+{\em level} & Mod level \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAmp_a6c082603685691e708b1f17b111dbe87}\label{classAmp_a6c082603685691e708b1f17b111dbe87}} 
+\index{Amp@{Amp}!SetSource@{SetSource}}
+\index{SetSource@{SetSource}!Amp@{Amp}}
+\doxysubsubsection{\texorpdfstring{SetSource()}{SetSource()}}
+{\footnotesize\ttfamily void Amp\+::\+Set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{source }\end{DoxyParamCaption})}
+
+Assign an input 
+\begin{DoxyParams}{Parameters}
+{\em source} & Audio input \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Amp_8h}{Amp.\+h}}\item 
+src/\mbox{\hyperlink{Amp_8cpp}{Amp.\+cpp}}\end{DoxyCompactItemize}

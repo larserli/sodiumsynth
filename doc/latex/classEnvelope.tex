@@ -1,0 +1,156 @@
+\hypertarget{classEnvelope}{}\doxysection{Envelope Class Reference}
+\label{classEnvelope}\index{Envelope@{Envelope}}
+
+
+{\ttfamily \#include $<$Envelope.\+h$>$}
+
+
+
+Inheritance diagram for Envelope\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classEnvelope__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Envelope\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEnvelope__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEnvelope_af387704e0cec1e3b1ddf9a838dc2b78c}{Envelope}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock, float a, float d, float s, float r)
+\item 
+virtual \mbox{\hyperlink{classEnvelope_a0d854766d1fc084d27ddb7b6cf7967af}{$\sim$\+Envelope}} ()
+\item 
+void \mbox{\hyperlink{classEnvelope_a5e3da711d4ae4c91f81163bc4ca9037f}{Key\+Down}} ()
+\item 
+void \mbox{\hyperlink{classEnvelope_a573ef1d93ce4fc1a3ee50d0780895a50}{Key\+Up}} ()
+\item 
+void \mbox{\hyperlink{classEnvelope_ae013e920c87636de988db3026bbdb3b2}{set\+Attack}} (float attack)
+\item 
+void \mbox{\hyperlink{classEnvelope_aed489f83a4f657c7c799e0090a911ed1}{set\+Decay}} (float decay)
+\item 
+void \mbox{\hyperlink{classEnvelope_ad4c46a78634703e4c699b422852e60ee}{set\+Sustain}} (float sustain)
+\item 
+void \mbox{\hyperlink{classEnvelope_aeaf88d793483a551627f334fb0639f9b}{set\+Release}} (float release)
+\item 
+float \mbox{\hyperlink{classEnvelope_ad5d8d0c2159f346bdd131203c0848c57}{get\+Attack}} ()
+\item 
+float \mbox{\hyperlink{classEnvelope_acedbb474056e0c075d8f07631370dcea}{get\+Decay}} ()
+\item 
+float \mbox{\hyperlink{classEnvelope_a2526820b58909429d96a9eaf4f037ff4}{get\+Sustain}} ()
+\item 
+float \mbox{\hyperlink{classEnvelope_a6836a7f20656578b3dc2549dee6101b2}{get\+Release}} ()
+\item 
+float \mbox{\hyperlink{classEnvelope_a81a1db94e6c9f7c3a22d275c9e2ed991}{get}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+ADSR envelope 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEnvelope_af387704e0cec1e3b1ddf9a838dc2b78c}\label{classEnvelope_af387704e0cec1e3b1ddf9a838dc2b78c}} 
+\index{Envelope@{Envelope}!Envelope@{Envelope}}
+\index{Envelope@{Envelope}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{Envelope()}{Envelope()}}
+{\footnotesize\ttfamily Envelope\+::\+Envelope (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock,  }\item[{float}]{a,  }\item[{float}]{d,  }\item[{float}]{s,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEnvelope_a0d854766d1fc084d27ddb7b6cf7967af}\label{classEnvelope_a0d854766d1fc084d27ddb7b6cf7967af}} 
+\index{Envelope@{Envelope}!````~Envelope@{$\sim$Envelope}}
+\index{````~Envelope@{$\sim$Envelope}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{$\sim$Envelope()}{~Envelope()}}
+{\footnotesize\ttfamily Envelope\+::$\sim$\+Envelope (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnvelope_a81a1db94e6c9f7c3a22d275c9e2ed991}\label{classEnvelope_a81a1db94e6c9f7c3a22d275c9e2ed991}} 
+\index{Envelope@{Envelope}!get@{get}}
+\index{get@{get}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily float Envelope\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get a sample \begin{DoxyReturn}{Returns}
+float \mbox{[}0-\/1\mbox{]} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classTimeVariant_a735fbb7ea47e6083cefabe3616222253}{Time\+Variant}}.
+
+\mbox{\Hypertarget{classEnvelope_ad5d8d0c2159f346bdd131203c0848c57}\label{classEnvelope_ad5d8d0c2159f346bdd131203c0848c57}} 
+\index{Envelope@{Envelope}!getAttack@{getAttack}}
+\index{getAttack@{getAttack}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{getAttack()}{getAttack()}}
+{\footnotesize\ttfamily float Envelope\+::get\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return attack time (ms) \mbox{\Hypertarget{classEnvelope_acedbb474056e0c075d8f07631370dcea}\label{classEnvelope_acedbb474056e0c075d8f07631370dcea}} 
+\index{Envelope@{Envelope}!getDecay@{getDecay}}
+\index{getDecay@{getDecay}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{getDecay()}{getDecay()}}
+{\footnotesize\ttfamily float Envelope\+::get\+Decay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return decay time (ms) \mbox{\Hypertarget{classEnvelope_a6836a7f20656578b3dc2549dee6101b2}\label{classEnvelope_a6836a7f20656578b3dc2549dee6101b2}} 
+\index{Envelope@{Envelope}!getRelease@{getRelease}}
+\index{getRelease@{getRelease}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{getRelease()}{getRelease()}}
+{\footnotesize\ttfamily float Envelope\+::get\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return release time (ms) \mbox{\Hypertarget{classEnvelope_a2526820b58909429d96a9eaf4f037ff4}\label{classEnvelope_a2526820b58909429d96a9eaf4f037ff4}} 
+\index{Envelope@{Envelope}!getSustain@{getSustain}}
+\index{getSustain@{getSustain}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{getSustain()}{getSustain()}}
+{\footnotesize\ttfamily float Envelope\+::get\+Sustain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return sustain level \mbox{[}0-\/1\mbox{]} \mbox{\Hypertarget{classEnvelope_a5e3da711d4ae4c91f81163bc4ca9037f}\label{classEnvelope_a5e3da711d4ae4c91f81163bc4ca9037f}} 
+\index{Envelope@{Envelope}!KeyDown@{KeyDown}}
+\index{KeyDown@{KeyDown}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{KeyDown()}{KeyDown()}}
+{\footnotesize\ttfamily void Envelope\+::\+Key\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Key down event \mbox{\Hypertarget{classEnvelope_a573ef1d93ce4fc1a3ee50d0780895a50}\label{classEnvelope_a573ef1d93ce4fc1a3ee50d0780895a50}} 
+\index{Envelope@{Envelope}!KeyUp@{KeyUp}}
+\index{KeyUp@{KeyUp}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{KeyUp()}{KeyUp()}}
+{\footnotesize\ttfamily void Envelope\+::\+Key\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Key up event \mbox{\Hypertarget{classEnvelope_ae013e920c87636de988db3026bbdb3b2}\label{classEnvelope_ae013e920c87636de988db3026bbdb3b2}} 
+\index{Envelope@{Envelope}!setAttack@{setAttack}}
+\index{setAttack@{setAttack}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{setAttack()}{setAttack()}}
+{\footnotesize\ttfamily void Envelope\+::set\+Attack (\begin{DoxyParamCaption}\item[{float}]{attack }\end{DoxyParamCaption})}
+
+Set attack time (ms) \mbox{\Hypertarget{classEnvelope_aed489f83a4f657c7c799e0090a911ed1}\label{classEnvelope_aed489f83a4f657c7c799e0090a911ed1}} 
+\index{Envelope@{Envelope}!setDecay@{setDecay}}
+\index{setDecay@{setDecay}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{setDecay()}{setDecay()}}
+{\footnotesize\ttfamily void Envelope\+::set\+Decay (\begin{DoxyParamCaption}\item[{float}]{decay }\end{DoxyParamCaption})}
+
+Set decay time (ms) \mbox{\Hypertarget{classEnvelope_aeaf88d793483a551627f334fb0639f9b}\label{classEnvelope_aeaf88d793483a551627f334fb0639f9b}} 
+\index{Envelope@{Envelope}!setRelease@{setRelease}}
+\index{setRelease@{setRelease}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{setRelease()}{setRelease()}}
+{\footnotesize\ttfamily void Envelope\+::set\+Release (\begin{DoxyParamCaption}\item[{float}]{release }\end{DoxyParamCaption})}
+
+Set release time (ms) \mbox{\Hypertarget{classEnvelope_ad4c46a78634703e4c699b422852e60ee}\label{classEnvelope_ad4c46a78634703e4c699b422852e60ee}} 
+\index{Envelope@{Envelope}!setSustain@{setSustain}}
+\index{setSustain@{setSustain}!Envelope@{Envelope}}
+\doxysubsubsection{\texorpdfstring{setSustain()}{setSustain()}}
+{\footnotesize\ttfamily void Envelope\+::set\+Sustain (\begin{DoxyParamCaption}\item[{float}]{sustain }\end{DoxyParamCaption})}
+
+Set sustain level \mbox{[}0-\/1\mbox{]} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Envelope_8h}{Envelope.\+h}}\item 
+src/\mbox{\hyperlink{Envelope_8cpp}{Envelope.\+cpp}}\end{DoxyCompactItemize}

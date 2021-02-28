@@ -1,0 +1,95 @@
+\hypertarget{classRandomGenerator}{}\doxysection{Random\+Generator$<$ T, $>$ Class Template Reference}
+\label{classRandomGenerator}\index{RandomGenerator$<$ T, $>$@{RandomGenerator$<$ T, $>$}}
+
+
+{\ttfamily \#include $<$Random\+Generator.\+h$>$}
+
+
+
+Inheritance diagram for Random\+Generator$<$ T, $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classRandomGenerator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Random\+Generator$<$ T, $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRandomGenerator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRandomGenerator_a3db1789efad8d1a04627950d21ab361c}{Random\+Generator}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock, T min, T max)
+\item 
+virtual \mbox{\hyperlink{classRandomGenerator_ac652db7f9f0a8dcd1394601e61c2a73c}{$\sim$\+Random\+Generator}} ()
+\item 
+void \mbox{\hyperlink{classRandomGenerator_acaee759c05de107416e7234cfd081149}{register\+Action}} (std\+::function$<$ void(T)$>$ action)
+\item 
+void \mbox{\hyperlink{classRandomGenerator_a19d4de957de0e62487a4aafbf8b0f586}{tick}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+arithmetic$<$ T $>$\+::value $>$\+::type $\ast$ = nullptr$>$\newline
+class Random\+Generator$<$ T, $>$}
+
+Random number generator. Observes a clock and on each tick creates a new random number and performs the registered actions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRandomGenerator_a3db1789efad8d1a04627950d21ab361c}\label{classRandomGenerator_a3db1789efad8d1a04627950d21ab361c}} 
+\index{RandomGenerator$<$ T, $>$@{RandomGenerator$<$ T, $>$}!RandomGenerator@{RandomGenerator}}
+\index{RandomGenerator@{RandomGenerator}!RandomGenerator$<$ T, $>$@{RandomGenerator$<$ T, $>$}}
+\doxysubsubsection{\texorpdfstring{RandomGenerator()}{RandomGenerator()}}
+{\footnotesize\ttfamily template$<$typename T , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+arithmetic$<$ T $>$\+::value $>$\+::type $\ast$  = nullptr$>$ \\
+\mbox{\hyperlink{classRandomGenerator}{Random\+Generator}}$<$ T, $>$\+::\mbox{\hyperlink{classRandomGenerator}{Random\+Generator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock,  }\item[{T}]{min,  }\item[{T}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Class constructor 
+\begin{DoxyParams}{Parameters}
+{\em clock} & clock source \\
+\hline
+{\em min} & Random number lower bound \\
+\hline
+{\em max} & Random number upper bound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRandomGenerator_ac652db7f9f0a8dcd1394601e61c2a73c}\label{classRandomGenerator_ac652db7f9f0a8dcd1394601e61c2a73c}} 
+\index{RandomGenerator$<$ T, $>$@{RandomGenerator$<$ T, $>$}!````~RandomGenerator@{$\sim$RandomGenerator}}
+\index{````~RandomGenerator@{$\sim$RandomGenerator}!RandomGenerator$<$ T, $>$@{RandomGenerator$<$ T, $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$RandomGenerator()}{~RandomGenerator()}}
+{\footnotesize\ttfamily template$<$typename T , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+arithmetic$<$ T $>$\+::value $>$\+::type $\ast$  = nullptr$>$ \\
+virtual \mbox{\hyperlink{classRandomGenerator}{Random\+Generator}}$<$ T, $>$\+::$\sim$\mbox{\hyperlink{classRandomGenerator}{Random\+Generator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRandomGenerator_acaee759c05de107416e7234cfd081149}\label{classRandomGenerator_acaee759c05de107416e7234cfd081149}} 
+\index{RandomGenerator$<$ T, $>$@{RandomGenerator$<$ T, $>$}!registerAction@{registerAction}}
+\index{registerAction@{registerAction}!RandomGenerator$<$ T, $>$@{RandomGenerator$<$ T, $>$}}
+\doxysubsubsection{\texorpdfstring{registerAction()}{registerAction()}}
+{\footnotesize\ttfamily template$<$typename T , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+arithmetic$<$ T $>$\+::value $>$\+::type $\ast$  = nullptr$>$ \\
+void \mbox{\hyperlink{classRandomGenerator}{Random\+Generator}}$<$ T, $>$\+::register\+Action (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(T)$>$}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Register a new action (lambda) \mbox{\Hypertarget{classRandomGenerator_a19d4de957de0e62487a4aafbf8b0f586}\label{classRandomGenerator_a19d4de957de0e62487a4aafbf8b0f586}} 
+\index{RandomGenerator$<$ T, $>$@{RandomGenerator$<$ T, $>$}!tick@{tick}}
+\index{tick@{tick}!RandomGenerator$<$ T, $>$@{RandomGenerator$<$ T, $>$}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily template$<$typename T , typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+arithmetic$<$ T $>$\+::value $>$\+::type $\ast$  = nullptr$>$ \\
+void \mbox{\hyperlink{classRandomGenerator}{Random\+Generator}}$<$ T, $>$\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Tick from clock Generate a random number and perform all actions with the new number 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{RandomGenerator_8h}{Random\+Generator.\+h}}\end{DoxyCompactItemize}

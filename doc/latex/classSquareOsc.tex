@@ -1,0 +1,100 @@
+\hypertarget{classSquareOsc}{}\doxysection{Square\+Osc Class Reference}
+\label{classSquareOsc}\index{SquareOsc@{SquareOsc}}
+
+
+{\ttfamily \#include $<$Square\+Osc.\+h$>$}
+
+
+
+Inheritance diagram for Square\+Osc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSquareOsc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Square\+Osc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSquareOsc__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSquareOsc_aebffe17a328c9956b81dac971c98de4a}{Square\+Osc}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock, float frequency)
+\item 
+virtual \mbox{\hyperlink{classSquareOsc_aa9e31414271705f480f9ce91d27a83c1}{$\sim$\+Square\+Osc}} ()
+\item 
+void \mbox{\hyperlink{classSquareOsc_a499ca00a3125936e7b7ae0f53ceef052}{set\+Freq}} (float freq) override
+\item 
+void \mbox{\hyperlink{classSquareOsc_afb298b1dc434e5c63ebdc90d4fc65bac}{tick}} () override
+\item 
+void \mbox{\hyperlink{classSquareOsc_a0b9f86a6120d8dd104c3887dd7610d6e}{Set\+PWMod}} (\mbox{\hyperlink{classIOsc}{IOsc}} $\ast$mod, float depth)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Square wave oscillator, supports pulse width modulation (PWM) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSquareOsc_aebffe17a328c9956b81dac971c98de4a}\label{classSquareOsc_aebffe17a328c9956b81dac971c98de4a}} 
+\index{SquareOsc@{SquareOsc}!SquareOsc@{SquareOsc}}
+\index{SquareOsc@{SquareOsc}!SquareOsc@{SquareOsc}}
+\doxysubsubsection{\texorpdfstring{SquareOsc()}{SquareOsc()}}
+{\footnotesize\ttfamily Square\+Osc\+::\+Square\+Osc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock,  }\item[{float}]{frequency }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSquareOsc_aa9e31414271705f480f9ce91d27a83c1}\label{classSquareOsc_aa9e31414271705f480f9ce91d27a83c1}} 
+\index{SquareOsc@{SquareOsc}!````~SquareOsc@{$\sim$SquareOsc}}
+\index{````~SquareOsc@{$\sim$SquareOsc}!SquareOsc@{SquareOsc}}
+\doxysubsubsection{\texorpdfstring{$\sim$SquareOsc()}{~SquareOsc()}}
+{\footnotesize\ttfamily Square\+Osc\+::$\sim$\+Square\+Osc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSquareOsc_a499ca00a3125936e7b7ae0f53ceef052}\label{classSquareOsc_a499ca00a3125936e7b7ae0f53ceef052}} 
+\index{SquareOsc@{SquareOsc}!setFreq@{setFreq}}
+\index{setFreq@{setFreq}!SquareOsc@{SquareOsc}}
+\doxysubsubsection{\texorpdfstring{setFreq()}{setFreq()}}
+{\footnotesize\ttfamily void Square\+Osc\+::set\+Freq (\begin{DoxyParamCaption}\item[{float}]{freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set frequency (Hz) 
+
+Implements \mbox{\hyperlink{classIOsc_af9cad38e2a502c32a05b4611375729b8}{IOsc}}.
+
+\mbox{\Hypertarget{classSquareOsc_a0b9f86a6120d8dd104c3887dd7610d6e}\label{classSquareOsc_a0b9f86a6120d8dd104c3887dd7610d6e}} 
+\index{SquareOsc@{SquareOsc}!SetPWMod@{SetPWMod}}
+\index{SetPWMod@{SetPWMod}!SquareOsc@{SquareOsc}}
+\doxysubsubsection{\texorpdfstring{SetPWMod()}{SetPWMod()}}
+{\footnotesize\ttfamily void Square\+Osc\+::\+Set\+PWMod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIOsc}{IOsc}} $\ast$}]{mod,  }\item[{float}]{depth }\end{DoxyParamCaption})}
+
+Set pulse with modulation 
+\begin{DoxyParams}{Parameters}
+{\em mod} & Modulation source \\
+\hline
+{\em depth} & Modulation depth \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSquareOsc_afb298b1dc434e5c63ebdc90d4fc65bac}\label{classSquareOsc_afb298b1dc434e5c63ebdc90d4fc65bac}} 
+\index{SquareOsc@{SquareOsc}!tick@{tick}}
+\index{tick@{tick}!SquareOsc@{SquareOsc}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Square\+Osc\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update function 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{SquareOsc_8h}{Square\+Osc.\+h}}\item 
+src/\mbox{\hyperlink{SquareOsc_8cpp}{Square\+Osc.\+cpp}}\end{DoxyCompactItemize}

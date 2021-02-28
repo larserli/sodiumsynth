@@ -1,0 +1,99 @@
+\hypertarget{classMixer}{}\doxysection{Mixer Class Reference}
+\label{classMixer}\index{Mixer@{Mixer}}
+
+
+{\ttfamily \#include $<$Mixer.\+h$>$}
+
+
+
+Inheritance diagram for Mixer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classMixer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mixer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classMixer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMixer_aedb32c0b9d526c8c3565311bab44a0fb}{Mixer}} ()
+\item 
+virtual \mbox{\hyperlink{classMixer_a85026e8a94b704a13e65445b80fc7821}{$\sim$\+Mixer}} ()
+\item 
+float \mbox{\hyperlink{classMixer_a23d7a6a710ec2ab09cad2ad811728013}{get}} () override
+\item 
+void \mbox{\hyperlink{classMixer_a8d64f5f1ab7350a3d9efa9ef16c1bece}{Add\+Channel}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$channel, float level)
+\item 
+void \mbox{\hyperlink{classMixer_a59f6357d63273e91f191253bf61de7b4}{Remove\+Channel}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$channel)
+\item 
+void \mbox{\hyperlink{classMixer_ada1113026656848a32ba0d41740667a7}{Set\+Level}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$channel, float level)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mix down inputs 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMixer_aedb32c0b9d526c8c3565311bab44a0fb}\label{classMixer_aedb32c0b9d526c8c3565311bab44a0fb}} 
+\index{Mixer@{Mixer}!Mixer@{Mixer}}
+\index{Mixer@{Mixer}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{Mixer()}{Mixer()}}
+{\footnotesize\ttfamily Mixer\+::\+Mixer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMixer_a85026e8a94b704a13e65445b80fc7821}\label{classMixer_a85026e8a94b704a13e65445b80fc7821}} 
+\index{Mixer@{Mixer}!````~Mixer@{$\sim$Mixer}}
+\index{````~Mixer@{$\sim$Mixer}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mixer()}{~Mixer()}}
+{\footnotesize\ttfamily Mixer\+::$\sim$\+Mixer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMixer_a8d64f5f1ab7350a3d9efa9ef16c1bece}\label{classMixer_a8d64f5f1ab7350a3d9efa9ef16c1bece}} 
+\index{Mixer@{Mixer}!AddChannel@{AddChannel}}
+\index{AddChannel@{AddChannel}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{AddChannel()}{AddChannel()}}
+{\footnotesize\ttfamily void Mixer\+::\+Add\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{channel,  }\item[{float}]{level }\end{DoxyParamCaption})}
+
+Add a channel to the mixer \mbox{\Hypertarget{classMixer_a23d7a6a710ec2ab09cad2ad811728013}\label{classMixer_a23d7a6a710ec2ab09cad2ad811728013}} 
+\index{Mixer@{Mixer}!get@{get}}
+\index{get@{get}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily float Mixer\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get a sample \begin{DoxyReturn}{Returns}
+float \mbox{[}0-\/1\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIAudioModule_a2779c082055cd93d3f3abe4b7cbb9b89}{IAudio\+Module}}.
+
+\mbox{\Hypertarget{classMixer_a59f6357d63273e91f191253bf61de7b4}\label{classMixer_a59f6357d63273e91f191253bf61de7b4}} 
+\index{Mixer@{Mixer}!RemoveChannel@{RemoveChannel}}
+\index{RemoveChannel@{RemoveChannel}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{RemoveChannel()}{RemoveChannel()}}
+{\footnotesize\ttfamily void Mixer\+::\+Remove\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{channel }\end{DoxyParamCaption})}
+
+Remove a channel from the mixer \mbox{\Hypertarget{classMixer_ada1113026656848a32ba0d41740667a7}\label{classMixer_ada1113026656848a32ba0d41740667a7}} 
+\index{Mixer@{Mixer}!SetLevel@{SetLevel}}
+\index{SetLevel@{SetLevel}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{SetLevel()}{SetLevel()}}
+{\footnotesize\ttfamily void Mixer\+::\+Set\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{channel,  }\item[{float}]{level }\end{DoxyParamCaption})}
+
+Adjust channel level 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Mixer_8h}{Mixer.\+h}}\item 
+src/\mbox{\hyperlink{Mixer_8cpp}{Mixer.\+cpp}}\end{DoxyCompactItemize}

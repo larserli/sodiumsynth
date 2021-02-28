@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['noisegen_44',['NoiseGen',['../classNoiseGen.html',1,'NoiseGen'],['../classNoiseGen.html#a95659f722b5d244a7ea3b184929ef7ad',1,'NoiseGen::NoiseGen()']]],
-  ['noisegen_2ecpp_45',['NoiseGen.cpp',['../NoiseGen_8cpp.html',1,'']]],
-  ['noisegen_2eh_46',['NoiseGen.h',['../NoiseGen_8h.html',1,'']]],
-  ['notemap_47',['notemap',['../Midi_8cpp.html#a6ad2fcd36cc2e1734ab5265c3e937cc9',1,'Midi.cpp']]]
+  ['keydown_35',['KeyDown',['../classEnvelope.html#a5e3da711d4ae4c91f81163bc4ca9037f',1,'Envelope']]],
+  ['keyup_36',['KeyUp',['../classEnvelope.html#a573ef1d93ce4fc1a3ee50d0780895a50',1,'Envelope']]]
 ];

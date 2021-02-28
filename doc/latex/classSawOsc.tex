@@ -1,0 +1,93 @@
+\hypertarget{classSawOsc}{}\doxysection{Saw\+Osc Class Reference}
+\label{classSawOsc}\index{SawOsc@{SawOsc}}
+
+
+{\ttfamily \#include $<$Saw\+Osc.\+h$>$}
+
+
+
+Inheritance diagram for Saw\+Osc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSawOsc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Saw\+Osc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSawOsc__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSawOsc_ac5376b53d7ea759be65cf0914d7fd370}{Saw\+Osc}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock, float frequency)
+\item 
+\mbox{\hyperlink{classSawOsc_a6a1c1430b6299005b422556fb1770cd5}{Saw\+Osc}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock)
+\item 
+virtual \mbox{\hyperlink{classSawOsc_a61dc576a48650b82861fce15434d31ca}{$\sim$\+Saw\+Osc}} ()
+\item 
+void \mbox{\hyperlink{classSawOsc_ab48d29f585031c82f2228792d27387e2}{tick}} () override
+\item 
+void \mbox{\hyperlink{classSawOsc_a61cbe5de1ed8e3bbc6aae2816f3a86d5}{set\+Freq}} (float freq) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Sawtooth (ramp) oscillator 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSawOsc_ac5376b53d7ea759be65cf0914d7fd370}\label{classSawOsc_ac5376b53d7ea759be65cf0914d7fd370}} 
+\index{SawOsc@{SawOsc}!SawOsc@{SawOsc}}
+\index{SawOsc@{SawOsc}!SawOsc@{SawOsc}}
+\doxysubsubsection{\texorpdfstring{SawOsc()}{SawOsc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Saw\+Osc\+::\+Saw\+Osc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock,  }\item[{float}]{frequency }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSawOsc_a6a1c1430b6299005b422556fb1770cd5}\label{classSawOsc_a6a1c1430b6299005b422556fb1770cd5}} 
+\index{SawOsc@{SawOsc}!SawOsc@{SawOsc}}
+\index{SawOsc@{SawOsc}!SawOsc@{SawOsc}}
+\doxysubsubsection{\texorpdfstring{SawOsc()}{SawOsc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Saw\+Osc\+::\+Saw\+Osc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSawOsc_a61dc576a48650b82861fce15434d31ca}\label{classSawOsc_a61dc576a48650b82861fce15434d31ca}} 
+\index{SawOsc@{SawOsc}!````~SawOsc@{$\sim$SawOsc}}
+\index{````~SawOsc@{$\sim$SawOsc}!SawOsc@{SawOsc}}
+\doxysubsubsection{\texorpdfstring{$\sim$SawOsc()}{~SawOsc()}}
+{\footnotesize\ttfamily Saw\+Osc\+::$\sim$\+Saw\+Osc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSawOsc_a61cbe5de1ed8e3bbc6aae2816f3a86d5}\label{classSawOsc_a61cbe5de1ed8e3bbc6aae2816f3a86d5}} 
+\index{SawOsc@{SawOsc}!setFreq@{setFreq}}
+\index{setFreq@{setFreq}!SawOsc@{SawOsc}}
+\doxysubsubsection{\texorpdfstring{setFreq()}{setFreq()}}
+{\footnotesize\ttfamily void Saw\+Osc\+::set\+Freq (\begin{DoxyParamCaption}\item[{float}]{freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set frequency (Hz) 
+
+Implements \mbox{\hyperlink{classIOsc_af9cad38e2a502c32a05b4611375729b8}{IOsc}}.
+
+\mbox{\Hypertarget{classSawOsc_ab48d29f585031c82f2228792d27387e2}\label{classSawOsc_ab48d29f585031c82f2228792d27387e2}} 
+\index{SawOsc@{SawOsc}!tick@{tick}}
+\index{tick@{tick}!SawOsc@{SawOsc}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Saw\+Osc\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update function 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{SawOsc_8h}{Saw\+Osc.\+h}}\item 
+src/\mbox{\hyperlink{SawOsc_8cpp}{Saw\+Osc.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{classTimeVariant}{}\doxysection{Time\+Variant Class Reference}
+\label{classTimeVariant}\index{TimeVariant@{TimeVariant}}
+
+
+{\ttfamily \#include $<$Time\+Variant.\+h$>$}
+
+
+
+Inheritance diagram for Time\+Variant\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTimeVariant__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Time\+Variant\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTimeVariant__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTimeVariant_a45cc87e3bbb399052d15e03077ef0042}{Time\+Variant}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock)
+\item 
+virtual \mbox{\hyperlink{classTimeVariant_a9a111e16a3656ea3f4ce4bfa8a025923}{$\sim$\+Time\+Variant}} ()
+\item 
+virtual float \mbox{\hyperlink{classTimeVariant_a735fbb7ea47e6083cefabe3616222253}{get}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$ \mbox{\hyperlink{classTimeVariant_af2a54cb1eda2757b31282929c199bd34}{m\+\_\+clock}}
+\item 
+float \mbox{\hyperlink{classTimeVariant_abf66546719e2011399b46ac94d67f0c7}{m\+\_\+clock\+\_\+freq}}
+\item 
+float \mbox{\hyperlink{classTimeVariant_a6e3678b44c7604488d561ae57f481445}{m\+\_\+out}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic interface for time dependent audio modules Modules of this type depend on input from a clock source and will act as observers to this clock source. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTimeVariant_a45cc87e3bbb399052d15e03077ef0042}\label{classTimeVariant_a45cc87e3bbb399052d15e03077ef0042}} 
+\index{TimeVariant@{TimeVariant}!TimeVariant@{TimeVariant}}
+\index{TimeVariant@{TimeVariant}!TimeVariant@{TimeVariant}}
+\doxysubsubsection{\texorpdfstring{TimeVariant()}{TimeVariant()}}
+{\footnotesize\ttfamily Time\+Variant\+::\+Time\+Variant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTimeVariant_a9a111e16a3656ea3f4ce4bfa8a025923}\label{classTimeVariant_a9a111e16a3656ea3f4ce4bfa8a025923}} 
+\index{TimeVariant@{TimeVariant}!````~TimeVariant@{$\sim$TimeVariant}}
+\index{````~TimeVariant@{$\sim$TimeVariant}!TimeVariant@{TimeVariant}}
+\doxysubsubsection{\texorpdfstring{$\sim$TimeVariant()}{~TimeVariant()}}
+{\footnotesize\ttfamily virtual Time\+Variant\+::$\sim$\+Time\+Variant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTimeVariant_a735fbb7ea47e6083cefabe3616222253}\label{classTimeVariant_a735fbb7ea47e6083cefabe3616222253}} 
+\index{TimeVariant@{TimeVariant}!get@{get}}
+\index{get@{get}!TimeVariant@{TimeVariant}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily virtual float Time\+Variant\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get a sample \begin{DoxyReturn}{Returns}
+float \mbox{[}0-\/1\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIAudioModule_a2779c082055cd93d3f3abe4b7cbb9b89}{IAudio\+Module}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classEnvelope_a81a1db94e6c9f7c3a22d275c9e2ed991}{Envelope}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTimeVariant_af2a54cb1eda2757b31282929c199bd34}\label{classTimeVariant_af2a54cb1eda2757b31282929c199bd34}} 
+\index{TimeVariant@{TimeVariant}!m\_clock@{m\_clock}}
+\index{m\_clock@{m\_clock}!TimeVariant@{TimeVariant}}
+\doxysubsubsection{\texorpdfstring{m\_clock}{m\_clock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIClockSource}{IClock\+Source}}$\ast$ Time\+Variant\+::m\+\_\+clock\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTimeVariant_abf66546719e2011399b46ac94d67f0c7}\label{classTimeVariant_abf66546719e2011399b46ac94d67f0c7}} 
+\index{TimeVariant@{TimeVariant}!m\_clock\_freq@{m\_clock\_freq}}
+\index{m\_clock\_freq@{m\_clock\_freq}!TimeVariant@{TimeVariant}}
+\doxysubsubsection{\texorpdfstring{m\_clock\_freq}{m\_clock\_freq}}
+{\footnotesize\ttfamily float Time\+Variant\+::m\+\_\+clock\+\_\+freq\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTimeVariant_a6e3678b44c7604488d561ae57f481445}\label{classTimeVariant_a6e3678b44c7604488d561ae57f481445}} 
+\index{TimeVariant@{TimeVariant}!m\_out@{m\_out}}
+\index{m\_out@{m\_out}!TimeVariant@{TimeVariant}}
+\doxysubsubsection{\texorpdfstring{m\_out}{m\_out}}
+{\footnotesize\ttfamily float Time\+Variant\+::m\+\_\+out\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{TimeVariant_8h}{Time\+Variant.\+h}}\end{DoxyCompactItemize}

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['chorus_119',['Chorus',['../classChorus.html',1,'']]],
-  ['clockobserver_120',['ClockObserver',['../classClockObserver.html',1,'']]]
+  ['chorus_136',['Chorus',['../classChorus.html',1,'']]],
+  ['clockobserver_137',['ClockObserver',['../classClockObserver.html',1,'']]]
 ];

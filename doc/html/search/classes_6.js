@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['noisegen_128',['NoiseGen',['../classNoiseGen.html',1,'']]]
+  ['meantrigger_144',['MeanTrigger',['../classMeanTrigger.html',1,'']]],
+  ['midi_145',['Midi',['../classMidi.html',1,'']]],
+  ['mixer_146',['Mixer',['../classMixer.html',1,'']]]
 ];

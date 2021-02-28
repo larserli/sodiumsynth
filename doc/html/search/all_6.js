@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['keydown_29',['KeyDown',['../classEnvelope.html#a5e3da711d4ae4c91f81163bc4ca9037f',1,'Envelope']]],
-  ['keyup_30',['KeyUp',['../classEnvelope.html#a573ef1d93ce4fc1a3ee50d0780895a50',1,'Envelope']]]
+  ['highpass_26',['HIGHPASS',['../classFilter.html#a2416b2e7476217608ac86147899ee423a828ad78e745209c145ada2b798f66322',1,'Filter']]]
 ];

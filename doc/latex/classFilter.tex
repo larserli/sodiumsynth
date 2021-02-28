@@ -1,0 +1,155 @@
+\hypertarget{classFilter}{}\doxysection{Filter Class Reference}
+\label{classFilter}\index{Filter@{Filter}}
+
+
+{\ttfamily \#include $<$Filter.\+h$>$}
+
+
+
+Inheritance diagram for Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFilter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classFilter_a2416b2e7476217608ac86147899ee423}{Filter\+Type}} \{ \mbox{\hyperlink{classFilter_a2416b2e7476217608ac86147899ee423acb8b651a89fa4feb96fe31bfc8610c89}{LOWPASS}}
+, \mbox{\hyperlink{classFilter_a2416b2e7476217608ac86147899ee423a828ad78e745209c145ada2b798f66322}{HIGHPASS}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFilter_a4909acccb68dc9bb30a776dc18eed442}{Filter}} (\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$clock, \mbox{\hyperlink{classFilter_a2416b2e7476217608ac86147899ee423}{Filter\+Type}} type=\mbox{\hyperlink{classFilter_a2416b2e7476217608ac86147899ee423acb8b651a89fa4feb96fe31bfc8610c89}{Filter\+Type\+::\+LOWPASS}})
+\item 
+virtual \mbox{\hyperlink{classFilter_a502ee334d42eac3edbaf32b599f9c35e}{$\sim$\+Filter}} ()
+\item 
+void \mbox{\hyperlink{classFilter_a26e1591ea56acb26b3ac6d40da28739d}{set\+Source}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$source)
+\item 
+void \mbox{\hyperlink{classFilter_a0a7a870929300c53194cf7bb2862508a}{set\+Cutoff}} (float fc)
+\item 
+void \mbox{\hyperlink{classFilter_ab7cd533ce520e426e3a25adc4ae95627}{set\+Mod}} (\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$mod\+Source, float source\+Lo=0.\+0f, float source\+Hi=1.\+0f, float offset=0.\+0f)
+\item 
+void \mbox{\hyperlink{classFilter_a4c46f2383cf41153d1931fd1eba586ac}{tick}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Lowpass or highpass filter 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classFilter_a2416b2e7476217608ac86147899ee423}\label{classFilter_a2416b2e7476217608ac86147899ee423}} 
+\index{Filter@{Filter}!FilterType@{FilterType}}
+\index{FilterType@{FilterType}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{FilterType}{FilterType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classFilter_a2416b2e7476217608ac86147899ee423}{Filter\+::\+Filter\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOWPASS@{LOWPASS}!Filter@{Filter}}\index{Filter@{Filter}!LOWPASS@{LOWPASS}}}\mbox{\Hypertarget{classFilter_a2416b2e7476217608ac86147899ee423acb8b651a89fa4feb96fe31bfc8610c89}\label{classFilter_a2416b2e7476217608ac86147899ee423acb8b651a89fa4feb96fe31bfc8610c89}} 
+LOWPASS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HIGHPASS@{HIGHPASS}!Filter@{Filter}}\index{Filter@{Filter}!HIGHPASS@{HIGHPASS}}}\mbox{\Hypertarget{classFilter_a2416b2e7476217608ac86147899ee423a828ad78e745209c145ada2b798f66322}\label{classFilter_a2416b2e7476217608ac86147899ee423a828ad78e745209c145ada2b798f66322}} 
+HIGHPASS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFilter_a4909acccb68dc9bb30a776dc18eed442}\label{classFilter_a4909acccb68dc9bb30a776dc18eed442}} 
+\index{Filter@{Filter}!Filter@{Filter}}
+\index{Filter@{Filter}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{Filter()}{Filter()}}
+{\footnotesize\ttfamily Filter\+::\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIClockSource}{IClock\+Source}} $\ast$}]{clock,  }\item[{\mbox{\hyperlink{classFilter_a2416b2e7476217608ac86147899ee423}{Filter\+Type}}}]{type = {\ttfamily \mbox{\hyperlink{classFilter_a2416b2e7476217608ac86147899ee423acb8b651a89fa4feb96fe31bfc8610c89}{Filter\+Type\+::\+LOWPASS}}} }\end{DoxyParamCaption})}
+
+Class constructor 
+\begin{DoxyParams}{Parameters}
+{\em clock} & sample clock source \\
+\hline
+{\em type} & \mbox{\hyperlink{classFilter}{Filter}} type (lowpass or highpass) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFilter_a502ee334d42eac3edbaf32b599f9c35e}\label{classFilter_a502ee334d42eac3edbaf32b599f9c35e}} 
+\index{Filter@{Filter}!````~Filter@{$\sim$Filter}}
+\index{````~Filter@{$\sim$Filter}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{$\sim$Filter()}{~Filter()}}
+{\footnotesize\ttfamily Filter\+::$\sim$\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFilter_a0a7a870929300c53194cf7bb2862508a}\label{classFilter_a0a7a870929300c53194cf7bb2862508a}} 
+\index{Filter@{Filter}!setCutoff@{setCutoff}}
+\index{setCutoff@{setCutoff}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{setCutoff()}{setCutoff()}}
+{\footnotesize\ttfamily void Filter\+::set\+Cutoff (\begin{DoxyParamCaption}\item[{float}]{fc }\end{DoxyParamCaption})}
+
+Set the filter cutoff frequency (Fc) 
+\begin{DoxyParams}{Parameters}
+{\em fc} & Cutoff frequency (Hz) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFilter_ab7cd533ce520e426e3a25adc4ae95627}\label{classFilter_ab7cd533ce520e426e3a25adc4ae95627}} 
+\index{Filter@{Filter}!setMod@{setMod}}
+\index{setMod@{setMod}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{setMod()}{setMod()}}
+{\footnotesize\ttfamily void Filter\+::set\+Mod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{mod\+Source,  }\item[{float}]{source\+Lo = {\ttfamily 0.0f},  }\item[{float}]{source\+Hi = {\ttfamily 1.0f},  }\item[{float}]{offset = {\ttfamily 0.0f} }\end{DoxyParamCaption})}
+
+Assing a modulator
+
+Modulation source will control the cutoff frequency between offset and the assigned cutoff frequency
+
+
+\begin{DoxyParams}{Parameters}
+{\em mod\+Source} & Modulation source \\
+\hline
+{\em source\+Lo} & Source signal range (low) \\
+\hline
+{\em source\+Hi} & Source signal range (high) \\
+\hline
+{\em offset} & Modulation offset \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFilter_a26e1591ea56acb26b3ac6d40da28739d}\label{classFilter_a26e1591ea56acb26b3ac6d40da28739d}} 
+\index{Filter@{Filter}!setSource@{setSource}}
+\index{setSource@{setSource}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Filter\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIAudioModule}{IAudio\+Module}} $\ast$}]{source }\end{DoxyParamCaption})}
+
+Set input (source) 
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFilter_a4c46f2383cf41153d1931fd1eba586ac}\label{classFilter_a4c46f2383cf41153d1931fd1eba586ac}} 
+\index{Filter@{Filter}!tick@{tick}}
+\index{tick@{tick}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Filter\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update filter 
+
+Implements \mbox{\hyperlink{classClockObserver_af56f0618ffd378427c3306fb45d3e908}{Clock\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Filter_8h}{Filter.\+h}}\item 
+src/\mbox{\hyperlink{Filter_8cpp}{Filter.\+cpp}}\end{DoxyCompactItemize}

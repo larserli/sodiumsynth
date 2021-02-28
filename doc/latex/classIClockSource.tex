@@ -1,0 +1,122 @@
+\hypertarget{classIClockSource}{}\doxysection{IClock\+Source Class Reference}
+\label{classIClockSource}\index{IClockSource@{IClockSource}}
+
+
+{\ttfamily \#include $<$IClock\+Source.\+h$>$}
+
+
+
+Inheritance diagram for IClock\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classIClockSource__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IClock\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classIClockSource__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classIClockSource_ae5eb2e90d1a747e6800ffacb9c5d2e4c}{Get\+Frequency}} ()
+\item 
+void \mbox{\hyperlink{classIClockSource_a0b1e9f26a2f55090ad9357d6cd5c2654}{Add\+Observer}} (\mbox{\hyperlink{classClockObserver}{Clock\+Observer}} $\ast$observer)
+\item 
+void \mbox{\hyperlink{classIClockSource_a9452e7e4806dd596a2ffee03ad3689cd}{Remove\+Observer}} (\mbox{\hyperlink{classClockObserver}{Clock\+Observer}} $\ast$observer)
+\item 
+\mbox{\hyperlink{classIClockSource_a7627d21ed02804c8db1945015c233637}{IClock\+Source}} ()
+\item 
+virtual \mbox{\hyperlink{classIClockSource_adbc4989e3d61ace7d47391861f675f2b}{$\sim$\+IClock\+Source}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classIClockSource_aae02cca4763907ba6956a73683e64a11}{update\+Observers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classIClockSource_a2bfc1dc1b3eb7b73b1765b776ae29924}{m\+\_\+freq}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for classes that can serve as a clock source 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIClockSource_a7627d21ed02804c8db1945015c233637}\label{classIClockSource_a7627d21ed02804c8db1945015c233637}} 
+\index{IClockSource@{IClockSource}!IClockSource@{IClockSource}}
+\index{IClockSource@{IClockSource}!IClockSource@{IClockSource}}
+\doxysubsubsection{\texorpdfstring{IClockSource()}{IClockSource()}}
+{\footnotesize\ttfamily IClock\+Source\+::\+IClock\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIClockSource_adbc4989e3d61ace7d47391861f675f2b}\label{classIClockSource_adbc4989e3d61ace7d47391861f675f2b}} 
+\index{IClockSource@{IClockSource}!````~IClockSource@{$\sim$IClockSource}}
+\index{````~IClockSource@{$\sim$IClockSource}!IClockSource@{IClockSource}}
+\doxysubsubsection{\texorpdfstring{$\sim$IClockSource()}{~IClockSource()}}
+{\footnotesize\ttfamily IClock\+Source\+::$\sim$\+IClock\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIClockSource_a0b1e9f26a2f55090ad9357d6cd5c2654}\label{classIClockSource_a0b1e9f26a2f55090ad9357d6cd5c2654}} 
+\index{IClockSource@{IClockSource}!AddObserver@{AddObserver}}
+\index{AddObserver@{AddObserver}!IClockSource@{IClockSource}}
+\doxysubsubsection{\texorpdfstring{AddObserver()}{AddObserver()}}
+{\footnotesize\ttfamily void IClock\+Source\+::\+Add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClockObserver}{Clock\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})}
+
+Add a clock observer 
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIClockSource_ae5eb2e90d1a747e6800ffacb9c5d2e4c}\label{classIClockSource_ae5eb2e90d1a747e6800ffacb9c5d2e4c}} 
+\index{IClockSource@{IClockSource}!GetFrequency@{GetFrequency}}
+\index{GetFrequency@{GetFrequency}!IClockSource@{IClockSource}}
+\doxysubsubsection{\texorpdfstring{GetFrequency()}{GetFrequency()}}
+{\footnotesize\ttfamily int IClock\+Source\+::\+Get\+Frequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the clock frequency \begin{DoxyReturn}{Returns}
+Clock frequency in Hz 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIClockSource_a9452e7e4806dd596a2ffee03ad3689cd}\label{classIClockSource_a9452e7e4806dd596a2ffee03ad3689cd}} 
+\index{IClockSource@{IClockSource}!RemoveObserver@{RemoveObserver}}
+\index{RemoveObserver@{RemoveObserver}!IClockSource@{IClockSource}}
+\doxysubsubsection{\texorpdfstring{RemoveObserver()}{RemoveObserver()}}
+{\footnotesize\ttfamily void IClock\+Source\+::\+Remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClockObserver}{Clock\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})}
+
+Remove a clock observer 
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIClockSource_aae02cca4763907ba6956a73683e64a11}\label{classIClockSource_aae02cca4763907ba6956a73683e64a11}} 
+\index{IClockSource@{IClockSource}!updateObservers@{updateObservers}}
+\index{updateObservers@{updateObservers}!IClockSource@{IClockSource}}
+\doxysubsubsection{\texorpdfstring{updateObservers()}{updateObservers()}}
+{\footnotesize\ttfamily void IClock\+Source\+::update\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update all attached observers (call tick() in all observers 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classIClockSource_a2bfc1dc1b3eb7b73b1765b776ae29924}\label{classIClockSource_a2bfc1dc1b3eb7b73b1765b776ae29924}} 
+\index{IClockSource@{IClockSource}!m\_freq@{m\_freq}}
+\index{m\_freq@{m\_freq}!IClockSource@{IClockSource}}
+\doxysubsubsection{\texorpdfstring{m\_freq}{m\_freq}}
+{\footnotesize\ttfamily int IClock\+Source\+::m\+\_\+freq\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{IClockSource_8h}{IClock\+Source.\+h}}\item 
+src/\mbox{\hyperlink{IClockSource_8cpp}{IClock\+Source.\+cpp}}\end{DoxyCompactItemize}
