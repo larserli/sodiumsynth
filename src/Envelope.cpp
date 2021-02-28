@@ -34,7 +34,6 @@ void Envelope::KeyUp(){
 
 float Envelope::get(){
 	return m_val;
-
 }
 
 void Envelope::setAttack(float attack){
