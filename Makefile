@@ -5,8 +5,8 @@ SOURCEDIR=src
 OBJDIR=obj
 CC=g++
 LD=g++
-FLAGS=-std=c++20 -fPIC -O2 -Wall
-DEBUGFLAGS=-std=c++20 -fpic -O0 -D _DEBUG -Wall
+FLAGS=-std=c++2a -fPIC -O2 -Wall
+DEBUGFLAGS=-std=c++2a -fpic -O0 -D _DEBUG -Wall
 TARGET=libsodiumsynth.so
 TARGET_DEBUG=libsodiumsynthd.so
 SOURCES=$(wildcard $(SOURCEDIR)/*.cpp)
