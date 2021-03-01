@@ -6,8 +6,7 @@
  */
 
 #include "SineOsc.h"
-#include <numbers>
-//#include <cmath>
+#include <cmath>
 
 SineOsc::SineOsc(IClockSource *clock, float frequency) : IOsc(clock) {
 	m_freq = frequency;
