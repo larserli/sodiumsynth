@@ -24,7 +24,7 @@ void SineOsc::setFreq(float freq){
 
 void SineOsc::tick(){
 	if(m_lfo != nullptr){
-		m_step = (m_freq + (m_lfo->get() * m_mod_depth)) * ((2.0f * std::numbers::pi / m_clock_freq));
+		m_step = (m_freq + (m_lfo->get() * m_mod_depth)) * ((2.0f * M_PI / m_clock_freq));
 	}
 	m_val += m_step;
 	if(m_val > (2 * M_PI)){
